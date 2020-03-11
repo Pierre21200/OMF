@@ -1,0 +1,84 @@
+.menu-container {
+  // est ce qu'il est possible de compiler ce sass sur un autre css ? parce que la je créé
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.menu-verso {
+  box-shadow: 0px 0px 10px 0px rgb(158, 158, 158);
+  background-color: $color-note-fond;
+
+  width: 85%; // j'ai un problème avec le margin
+  height: 85%;
+
+  > .menu-header {
+    // je n'arrive pas avec justify content.
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 25%;
+
+    > .header-icon {
+      // color : faire une mixin avec webkit machin la
+      margin-top: 10px;
+      margin-bottom: 0px;
+
+      + .header-title {
+        > p {
+          margin-top: 10px;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  > .menu-section {
+    display: flex;
+    justify-content: space-around;
+    height: 65%;
+    > .entres,
+    .dishes {
+      width: 30%;
+      // border: 2px solid black;
+    }
+    > .deserts {
+      width: 30%;
+      //border: 2px solid black;
+    }
+
+    & .titre {
+      display: flex;
+      justify-content: center;
+      font-weight: bold;
+    }
+
+    & .choix {
+      display: flex;
+      justify-content: space-around;
+      font-size: 15px;
+      width: 100%;
+      text-align: center;
+      > .txt {
+        width: 80%;
+      }
+      > .price {
+        font-weight: bold;
+      }
+    }
+  }
+
+  > .menu-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+    height: 10%;
+    > i {
+      margin-right: 15px;
+    }
+  }
+}
