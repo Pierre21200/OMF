@@ -1,11 +1,3 @@
-html,
-body {
-  height: 100%;
-  width: 100%;
-  margin: 0px;
-  padding: 0px;
-}
-
 header {
   width: 100%;
   height: 15%;
@@ -21,6 +13,13 @@ header p {
   font-family: "Berlin Sans FB Demi", sans-serif;
 }
 
+footer {
+  height: 7%;
+  width: 100%;
+  background-color: #579c87;
+  display: flex;
+}
+
 section {
   height: 78%;
   width: 100%;
@@ -32,29 +31,37 @@ section a {
   color: #3c1218;
 }
 
-.menus {
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+.menus-container {
   height: 80%;
   display: flex;
 }
-.menus__note {
+
+.menu {
   width: 218.75px;
   height: 308.75px;
   margin: auto;
   box-shadow: 0px 0px 10px 0px #525252;
-  background-color: #fcdfdb;
   display: flex;
   flex-direction: column;
-  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
-.menus__note__i {
-  height: 45%;
-  display: flex;
+.menu__icon {
+  padding-bottom: 1em;
 }
-.menus__note__i i {
+.menu__icon i {
   margin: auto;
   margin-bottom: 0px;
 }
-.menus__note__titre {
+.menu__title {
   color: #3c1218;
   font-weight: bold;
   font-style: italic;
@@ -62,100 +69,39 @@ section a {
   display: flex;
   align-items: center;
 }
-.menus__note__titre p {
+.menu__title p {
   margin: auto;
 }
-.menus__note__menu {
+.menu__content {
   color: #3c1218;
   font-weight: bold;
   font-style: italic;
-  height: 45%;
 }
-.menus__note__menu p {
+.menu__content p {
   font-size: 20px;
-}
-.menus__chic {
-  width: 218.75px;
-  height: 308.75px;
-  margin: auto;
-  box-shadow: 0px 0px 10px 0px #525252;
-  background-color: #fff5fe;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-.menus__chic__titre {
-  display: flex;
-  text-align: bottom;
-  font-style: italic;
-  height: 50%;
-}
-.menus__chic__titre p {
-  margin: auto;
-  margin-bottom: 0px;
-  font-family: Arial;
-  font-size: 20px;
-}
-.menus__chic__menu {
-  height: 50%;
-}
-.menus__delice {
-  width: 218.75px;
-  height: 308.75px;
-  margin: auto;
-  box-shadow: 0px 0px 10px 0px #525252;
-  background-color: #f9f9f9;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-.menus__delice__titre {
-  display: flex;
-  text-align: bottom;
-  font-style: italic;
-  height: 50%;
-}
-.menus__delice__titre p {
-  margin: auto;
-  margin-bottom: 0px;
-  font-family: Arial;
-  font-size: 20px;
-}
-.menus__delice__menu {
-  height: 50%;
-}
-.menus__palette {
-  width: 218.75px;
-  height: 308.75px;
-  margin: auto;
-  box-shadow: 0px 0px 10px 0px #525252;
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-.menus__palette__titre {
-  display: flex;
-  text-align: bottom;
-  font-style: italic;
-  height: 50%;
-}
-.menus__palette__titre p {
-  margin: auto;
-  margin-bottom: 0px;
-  font-family: Arial;
-  font-size: 20px;
-}
-.menus__palette__menu {
-  height: 50%;
 }
 
-.prochainement {
+#note {
+  background-color: #fcdfdb;
+}
+
+#chic {
+  background-color: #fff5fe;
+}
+
+#delices {
+  background-color: #f9f9f9;
+}
+
+#palette {
+  background-color: white;
+}
+
+.prochainement__container {
   height: 20%;
   display: flex;
   text-align: center;
 }
-
 .prochainement__btn {
   height: 50%;
   width: 25%;
@@ -169,87 +115,25 @@ section a {
   color: #fdcb46;
 }
 
-footer {
-  height: 7%;
-  width: 100%;
-  background-color: #579c87;
-  display: flex;
-}
-
-.mentions {
+.footer__container {
   display: flex;
   width: 50%;
 }
-.mentions__btn {
+.footer__btn {
   height: 100%;
-  margin: auto;
-  margin-left: 30px;
   font-size: 20px;
   background-color: #579c87;
   border: 0px;
   color: #fdcb46;
 }
 
-.contact {
-  width: 50%;
-  display: flex;
-}
-.contact__btn {
-  height: 100%;
-  margin: auto;
+#contact {
+  justify-content: flex-end;
   margin-right: 20px;
-  font-size: 20px;
-  background-color: #579c87;
-  border: 0px;
-  color: #fdcb46;
 }
 
-section .menu {
-  padding-top: 15px;
-  border: 2px solid black;
-}
-section .menu__header {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-section .menu__header i {
-  font-size: 30px;
-}
-section .menu__header p {
-  font-size: 20px;
-}
-section .menu__section {
-  display: flex;
-  justify-content: space-around;
-}
-section .menu__section__entre, section .menu__section__plat, section .menu__section__dessert {
-  width: 30%;
-}
-section .menu__section__entre__titre, section .menu__section__plat__titre, section .menu__section__dessert__titre {
-  display: flex;
-  justify-content: center;
-}
-section .menu__section__entre__titre p, section .menu__section__plat__titre p, section .menu__section__dessert__titre p {
-  margin: 18px;
-  font-size: 18px;
-}
-section .menu__section__entre--1, section .menu__section__entre--2, section .menu__section__entre--3, section .menu__section__entre--4, section .menu__section__plat--1, section .menu__section__plat--2, section .menu__section__plat--3, section .menu__section__plat--4, section .menu__section__dessert--1, section .menu__section__dessert--2, section .menu__section__dessert--3, section .menu__section__dessert--4 {
-  display: flex;
-  justify-content: space-between;
-}
-section .menu__section__entre--1 p, section .menu__section__entre--2 p, section .menu__section__entre--3 p, section .menu__section__entre--4 p, section .menu__section__plat--1 p, section .menu__section__plat--2 p, section .menu__section__plat--3 p, section .menu__section__plat--4 p, section .menu__section__dessert--1 p, section .menu__section__dessert--2 p, section .menu__section__dessert--3 p, section .menu__section__dessert--4 p {
-  font-size: 15px;
-}
-section .menu__section__entre--1__prix p, section .menu__section__entre--2__prix p, section .menu__section__entre--3__prix p, section .menu__section__entre--4__prix p, section .menu__section__plat--1__prix p, section .menu__section__plat--2__prix p, section .menu__section__plat--3__prix p, section .menu__section__plat--4__prix p, section .menu__section__dessert--1__prix p, section .menu__section__dessert--2__prix p, section .menu__section__dessert--3__prix p, section .menu__section__dessert--4__prix p {
-  margin: 18px;
-}
-section .menu__footer {
-  display: flex;
-  justify-content: center;
-}
-section .menu__footer i {
-  margin: 15px;
+#mentions {
+  margin-left: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

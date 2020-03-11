@@ -1,0 +1,26 @@
+//Mixins
+
+@mixin menu__primary($color) {
+  width: 218.75px;
+  height: 308.75px;
+  margin: auto;
+  box-shadow: 0px 0px 10px 0px rgb(82, 82, 82);
+  // background-color: $color
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+@mixin menus__titre {
+  display: flex;
+  text-align: bottom;
+  font-style: italic;
+  height: 50%;
+}
+
+@mixin menus__titre__p($font, $font-size) {
+  margin: auto;
+  margin-bottom: 0px;
+  font-family: $font;
+  font-size: $font-size;
+}

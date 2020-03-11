@@ -1,0 +1,103 @@
+.menus-container {
+  height: 80%;
+  display: flex;
+}
+.menu {
+  width: 218.75px;
+  height: 308.75px;
+  margin: auto;
+  box-shadow: 0px 0px 10px 0px rgb(82, 82, 82);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__icon {
+    padding-bottom: 1em;
+    & i {
+      margin: auto;
+      margin-bottom: 0px;
+    }
+  }
+
+  &__title {
+    color: $color-note-texte;
+    font-weight: bold;
+    font-style: italic;
+    height: 10%;
+    display: flex;
+    align-items: center;
+
+    & p {
+      margin: auto;
+    }
+  }
+
+  &__content {
+    color: $color-note-texte;
+    font-weight: bold;
+    font-style: italic;
+
+    & p {
+      font-size: 20px;
+    }
+  }
+}
+
+#note {
+  background-color: $color-note-fond;
+}
+
+#chic {
+  background-color: $color-chic-fond;
+}
+
+#delices {
+  background-color: $color-delices-fond;
+}
+
+#palette {
+  background-color: $color-palette-fond;
+}
+
+.prochainement {
+  &__container {
+    height: 20%;
+    display: flex;
+    text-align: center;
+  }
+  &__btn {
+    height: 50%;
+    width: 25%;
+    margin: auto;
+    margin-top: 0px;
+    border: 2px;
+    background-color: $color-primary;
+    border-radius: 10px 10px 10px 10px;
+    font-size: 20px;
+    padding: 0px;
+    color: $color-secondary;
+  }
+}
+
+.footer {
+  &__container {
+    display: flex;
+    width: 50%;
+  }
+  &__btn {
+    height: 100%;
+    font-size: 20px;
+    background-color: $color-primary;
+    border: 0px;
+    color: $color-secondary;
+  }
+}
+
+#contact {
+  justify-content: flex-end;
+  margin-right: 20px;
+}
+#mentions {
+  margin-left: 20px;
+}
