@@ -45,10 +45,10 @@ body {
 }
 
 .menu {
-  width: 218.75px;
-  height: 308.75px;
+  width: 241.5px;
+  height: 341.55px;
   margin: auto;
-  box-shadow: 0px 0px 10px 0px #525252;
+  box-shadow: 0px 0px 10px 0px #9e9e9e;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -60,14 +60,13 @@ body {
 .menu__icon i {
   margin: auto;
   margin-bottom: 0px;
+  color: #3c1218;
 }
 .menu__title {
   color: #3c1218;
   font-weight: bold;
   font-style: italic;
-  height: 10%;
-  display: flex;
-  align-items: center;
+  font-size: 20px;
 }
 .menu__title p {
   margin: auto;
@@ -88,13 +87,28 @@ body {
 #chic {
   background-color: #fff5fe;
 }
+#chic__title, #chic__content {
+  background: -webkit-linear-gradient(#905bfd, #d8352e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
-#delices {
+#delice {
   background-color: #f9f9f9;
+}
+#delice__title, #delice__content {
+  background: -webkit-linear-gradient(#6cb2f9, #0431df);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 #palette {
   background-color: white;
+}
+#palette__title, #palette__content {
+  background: -webkit-linear-gradient(#bfff7e, #38973c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .prochainement__container {
@@ -102,11 +116,11 @@ body {
   display: flex;
   text-align: center;
 }
-.prochainement__btn {
+.prochainement__container button {
   height: 50%;
   width: 25%;
   margin: auto;
-  margin-top: 0px;
+  margin-top: 10px;
   border: 2px;
   background-color: #579c87;
   border-radius: 10px 10px 10px 10px;
@@ -115,11 +129,11 @@ body {
   color: #fdcb46;
 }
 
-.footer__container {
+.btn__container {
   display: flex;
   width: 50%;
 }
-.footer__btn {
+.btn__container button {
   height: 100%;
   font-size: 20px;
   background-color: #579c87;

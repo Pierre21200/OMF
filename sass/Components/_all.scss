@@ -3,10 +3,10 @@
   display: flex;
 }
 .menu {
-  width: 218.75px;
-  height: 308.75px;
+  width: 241.5px;
+  height: 341.55px;
   margin: auto;
-  box-shadow: 0px 0px 10px 0px rgb(82, 82, 82);
+  box-shadow: 0px 0px 10px 0px rgb(158, 158, 158);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -17,6 +17,7 @@
     & i {
       margin: auto;
       margin-bottom: 0px;
+      color: $color-note-texte;
     }
   }
 
@@ -24,10 +25,7 @@
     color: $color-note-texte;
     font-weight: bold;
     font-style: italic;
-    height: 10%;
-    display: flex;
-    align-items: center;
-
+    font-size: 20px;
     & p {
       margin: auto;
     }
@@ -37,7 +35,6 @@
     color: $color-note-texte;
     font-weight: bold;
     font-style: italic;
-
     & p {
       font-size: 20px;
     }
@@ -50,27 +47,43 @@
 
 #chic {
   background-color: $color-chic-fond;
+  &__title,
+  &__content {
+    background: -webkit-linear-gradient(rgb(144, 91, 253), rgb(216, 53, 46));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }
 
-#delices {
+#delice {
   background-color: $color-delices-fond;
+  &__title,
+  &__content {
+    background: -webkit-linear-gradient(rgb(108, 178, 249), rgb(4, 49, 223));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }
 
 #palette {
   background-color: $color-palette-fond;
+  &__title,
+  &__content {
+    background: -webkit-linear-gradient(rgb(191, 255, 126), rgb(56, 151, 60));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }
 
-.prochainement {
-  &__container {
-    height: 20%;
-    display: flex;
-    text-align: center;
-  }
-  &__btn {
+.prochainement__container {
+  height: 20%;
+  display: flex;
+  text-align: center;
+  & button {
     height: 50%;
     width: 25%;
     margin: auto;
-    margin-top: 0px;
+    margin-top: 10px;
     border: 2px;
     background-color: $color-primary;
     border-radius: 10px 10px 10px 10px;
@@ -80,12 +93,10 @@
   }
 }
 
-.footer {
-  &__container {
-    display: flex;
-    width: 50%;
-  }
-  &__btn {
+.btn__container {
+  display: flex;
+  width: 50%;
+  & button {
     height: 100%;
     font-size: 20px;
     background-color: $color-primary;
