@@ -15,27 +15,23 @@
   &__icon {
     padding-bottom: 1em;
     & i {
-      margin: auto;
-      margin-bottom: 0px;
-      color: $color-note-texte;
+      @include gradient(rgb(240, 81, 96), rgb(246, 145, 106));
     }
   }
 
   &__title {
-    color: $color-note-texte;
-    font-weight: bold;
-    font-style: italic;
-    font-size: 20px;
     & p {
+      font-weight: bold;
+      font-style: italic;
+      font-size: 20px;
       margin: auto;
     }
   }
 
   &__content {
-    color: $color-note-texte;
-    font-weight: bold;
-    font-style: italic;
     & p {
+      font-weight: bold;
+      font-style: italic;
       font-size: 20px;
     }
   }
@@ -43,25 +39,25 @@
 
 #note {
   background-color: $color-note-fond;
+  &__title,
+  &__content {
+    color: $color-note-texte;
+  }
 }
 
 #chic {
   background-color: $color-chic-fond;
   &__title,
   &__content {
-    background: -webkit-linear-gradient(rgb(144, 91, 253), rgb(216, 53, 46));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    @include gradient(rgb(144, 91, 253), rgb(216, 53, 46));
   }
 }
 
 #delice {
-  background-color: $color-delices-fond;
+  background-color: $color-delice-fond;
   &__title,
   &__content {
-    background: -webkit-linear-gradient(rgb(108, 178, 249), rgb(4, 49, 223));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    @include gradient(rgb(108, 178, 249), rgb(4, 49, 223));
   }
 }
 
@@ -69,9 +65,7 @@
   background-color: $color-palette-fond;
   &__title,
   &__content {
-    background: -webkit-linear-gradient(rgb(191, 255, 126), rgb(56, 151, 60));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    @include gradient(rgb(191, 255, 126), rgb(56, 151, 60));
   }
 }
 
@@ -110,5 +104,6 @@
   margin-right: 20px;
 }
 #mentions {
+  justify-content: flex-start;
   margin-left: 20px;
 }
