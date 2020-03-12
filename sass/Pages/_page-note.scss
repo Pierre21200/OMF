@@ -1,84 +1,127 @@
 .menu-container {
-  // est ce qu'il est possible de compiler ce sass sur un autre css ? parce que la je créé
+  // est ce qu'il est possible de compiler ce sass sur un autre css ?
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-.menu-verso {
-  box-shadow: 0px 0px 10px 0px rgb(158, 158, 158);
-  background-color: $color-note-fond;
 
-  width: 85%; // j'ai un problème avec le margin
-  height: 85%;
+  > #menu-note {
+    // est ce qu'il vaut mieux donner un nom de classe plutot qu'un id ?
+    background-color: $color-note-fond;
+    color: $color-note-texte;
+  }
 
-  > .menu-header {
-    // je n'arrive pas avec justify content.
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    height: 25%;
+  > #menu-delice {
+    background-color: $color-delice-fond-verso;
+  }
 
-    > .header-icon {
-      // color : faire une mixin avec webkit machin la
-      margin-top: 10px;
-      margin-bottom: 0px;
+  > #menu-chic {
+    background-color: $color-chic-fond; // est ce je met entres-chic, dishes-chic, et deserts-chic ici ?
+  }
 
-      + .header-title {
-        > p {
-          margin-top: 10px;
+  > #menu-palette {
+    background: $color-palette-fond;
+  }
+
+  > .menu-verso {
+    box-shadow: 0px 0px 10px 0px rgb(158, 158, 158);
+    width: 85%;
+    height: 85%;
+
+    > .menu-header {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      height: 25%;
+
+      > #title-chic {
+        @include gradient(rgb(144, 91, 253), rgb(216, 53, 46));
+      }
+
+      > #title-delice {
+        @include gradient(rgb(108, 178, 249), rgb(4, 49, 223));
+      }
+
+      > #title-palette {
+        @include gradient(rgb(191, 255, 126), rgb(56, 151, 60));
+      }
+
+      > .header-icon {
+        margin-top: 10px;
+        margin-bottom: 0px;
+        > i {
+          @include gradient(rgb(240, 81, 96), rgb(246, 145, 106));
+        }
+
+        + .header-title {
+          > p {
+            margin-top: 10px;
+            font-weight: bold;
+            font-size: 25px;
+          }
+        }
+      }
+    }
+
+    > .menu-section {
+      display: flex;
+      justify-content: space-around;
+      height: 65%;
+      > .entres,
+      .dishes,
+      .deserts {
+        width: 30%;
+      }
+      > #entres-chic {
+        color: rgb(198, 116, 18);
+      }
+
+      > #dishes-chic {
+        color: rgb(165, 103, 153);
+      }
+
+      > #deserts-chic {
+        color: rgb(110, 76, 204);
+      }
+
+      & .titre {
+        display: flex;
+        justify-content: center;
+        font-weight: bold;
+      }
+
+      & .choix {
+        display: flex;
+        justify-content: space-around;
+        font-size: 15px;
+        width: 100%;
+        text-align: center;
+        > .txt {
+          width: 80%;
+        }
+        > .price {
           font-weight: bold;
         }
       }
     }
-  }
 
-  > .menu-section {
-    display: flex;
-    justify-content: space-around;
-    height: 65%;
-    > .entres,
-    .dishes {
-      width: 30%;
-      // border: 2px solid black;
-    }
-    > .deserts {
-      width: 30%;
-      //border: 2px solid black;
-    }
-
-    & .titre {
+    > .menu-footer {
       display: flex;
       justify-content: center;
-      font-weight: bold;
-    }
-
-    & .choix {
-      display: flex;
-      justify-content: space-around;
-      font-size: 15px;
-      width: 100%;
-      text-align: center;
-      > .txt {
-        width: 80%;
+      align-items: center;
+      padding-bottom: 10px;
+      height: 10%;
+      > i {
+        margin-right: 15px;
+        @include gradient(rgb(240, 81, 96), rgb(246, 145, 106));
       }
-      > .price {
+      > p {
         font-weight: bold;
+        font-size: 25px;
       }
-    }
-  }
-
-  > .menu-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 10px;
-    height: 10%;
-    > i {
-      margin-right: 15px;
     }
   }
 }
