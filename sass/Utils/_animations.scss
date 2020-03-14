@@ -1,0 +1,15 @@
+.title {
+  p,
+  p::before,
+  p::after {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  p::before,
+  p::after {
+    height: 5px;
+    width: 120px;
+    background: orange;
+    content: '';
+  }
+}

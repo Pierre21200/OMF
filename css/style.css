@@ -1,3 +1,8 @@
+a {
+  text-decoration: none;
+  margin: auto;
+}
+
 header {
   width: 100%;
   height: 15%;
@@ -10,7 +15,7 @@ header p {
   color: #fdcb46;
   font-size: 50px;
   font-weight: bold;
-  font-family: 'Berlin Sans FB Demi', sans-serif;
+  font-family: "Berlin Sans FB Demi", sans-serif;
 }
 
 footer {
@@ -53,6 +58,7 @@ body {
   font-style: italic;
   font-size: 20px;
   margin: auto;
+  display: flex;
 }
 .menu__content p {
   font-weight: bold;
@@ -63,8 +69,7 @@ body {
 #note {
   background-color: #fcdfdb;
 }
-#note__title,
-#note__content {
+#note__title, #note__content {
   color: #3c1218;
 }
 #note .menu__icon {
@@ -79,8 +84,7 @@ body {
 #chic {
   background-color: #fff5fe;
 }
-#chic__title,
-#chic__content {
+#chic__title, #chic__content {
   background: -webkit-linear-gradient(#905bfd, #d8352e);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -89,8 +93,7 @@ body {
 #delice {
   background-color: #f9f9f9;
 }
-#delice__title,
-#delice__content {
+#delice__title, #delice__content {
   background: -webkit-linear-gradient(#6cb2f9, #0431df);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -99,8 +102,7 @@ body {
 #palette {
   background-color: #fdfffd;
 }
-#palette__title,
-#palette__content {
+#palette__title, #palette__content {
   background: -webkit-linear-gradient(#bfff7e, #38973c);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -186,6 +188,7 @@ body {
 .menu-container > .menu-verso > .menu-section .title {
   display: flex;
   justify-content: center;
+  text-align: center;
   font-weight: bold;
 }
 .menu-container > .menu-verso > .menu-section .choice {
@@ -265,6 +268,20 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: serif;
+}
+
+.title p,
+.title p::before,
+.title p::after {
+  display: inline-block;
+  vertical-align: middle;
+}
+.title p::before,
+.title p::after {
+  height: 5px;
+  width: 120px;
+  background: orange;
+  content: "";
 }
 
 /*# sourceMappingURL=style.css.map */

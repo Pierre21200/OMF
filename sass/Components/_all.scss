@@ -18,6 +18,7 @@
       font-style: italic;
       font-size: 20px;
       margin: auto;
+      display: flex;
     }
   }
 
@@ -38,6 +39,7 @@
   }
   & .menu__icon {
     padding-bottom: 1em;
+
     & i {
       @include gradient(rgb(240, 81, 96), rgb(246, 145, 106));
     }
