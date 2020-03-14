@@ -1,5 +1,4 @@
 .menu-container {
-  // est ce qu'il est possible de compiler ce sass sur un autre css ?
   width: 100%;
   height: 100%;
   display: flex;
@@ -7,61 +6,23 @@
   justify-content: center;
   align-items: center;
 
-  > #menu-note {
-    // est ce qu'il vaut mieux donner un nom de classe plutot qu'un id ?
-    background-color: $color-note-fond;
-    color: $color-note-texte;
-  }
-
-  > #menu-delice {
-    background-color: $color-delice-fond-verso;
-  }
-
-  > #menu-chic {
-    background-color: $color-chic-fond; // est ce je met entres-chic, dishes-chic, et deserts-chic ici ?
-  }
-
-  > #menu-palette {
-    background: $color-palette-fond;
-  }
-
   > .menu-verso {
     box-shadow: 0px 0px 10px 0px rgb(158, 158, 158);
     width: 85%;
     height: 85%;
-
+    font-family: sans-serif;
+    font-style: italic;
     > .menu-header {
       display: flex;
       flex-direction: column;
       justify-content: center;
       text-align: center;
       height: 25%;
-
-      > #title-chic {
-        @include gradient(rgb(144, 91, 253), rgb(216, 53, 46));
-      }
-
-      > #title-delice {
-        @include gradient(rgb(108, 178, 249), rgb(4, 49, 223));
-      }
-
-      > #title-palette {
-        @include gradient(rgb(191, 255, 126), rgb(56, 151, 60));
-      }
-
-      > .header-icon {
-        margin-top: 10px;
-        margin-bottom: 0px;
-        > i {
-          @include gradient(rgb(240, 81, 96), rgb(246, 145, 106));
-        }
-
-        + .header-title {
-          > p {
-            margin-top: 10px;
-            font-weight: bold;
-            font-size: 25px;
-          }
+      > .header-title {
+        > p {
+          margin-top: 10px;
+          font-weight: bold;
+          font-size: 25px;
         }
       }
     }
@@ -70,30 +31,19 @@
       display: flex;
       justify-content: space-around;
       height: 65%;
-      > .entres,
+      > .starters,
       .dishes,
       .deserts {
         width: 30%;
       }
-      > #entres-chic {
-        color: rgb(198, 116, 18);
-      }
 
-      > #dishes-chic {
-        color: rgb(165, 103, 153);
-      }
-
-      > #deserts-chic {
-        color: rgb(110, 76, 204);
-      }
-
-      & .titre {
+      & .title {
         display: flex;
         justify-content: center;
         font-weight: bold;
       }
 
-      & .choix {
+      & .choice {
         display: flex;
         justify-content: space-around;
         font-size: 15px;
@@ -114,14 +64,62 @@
       align-items: center;
       padding-bottom: 10px;
       height: 10%;
-      > i {
-        margin-right: 15px;
-        @include gradient(rgb(240, 81, 96), rgb(246, 145, 106));
-      }
       > p {
         font-weight: bold;
         font-size: 25px;
       }
+    }
+  }
+
+  > #menu-note {
+    background-color: $color-note-fond;
+    color: $color-note-texte;
+    > .header-icon {
+      margin-top: 10px;
+      margin-bottom: 0px;
+    }
+    & .title-note {
+      font-family: serif;
+    }
+    & i {
+      margin-right: 15px;
+      @include gradient(rgb(240, 81, 96), rgb(246, 145, 106));
+    }
+  }
+
+  > #menu-delice {
+    background-color: $color-delice-fond-verso;
+    & #title-delice {
+      @include gradient(rgb(108, 178, 249), rgb(4, 49, 223));
+      font-family: serif;
+    }
+  }
+
+  > #menu-chic {
+    background-color: $color-chic-fond;
+    font-style: normal;
+    & #title-chic {
+      @include gradient(rgb(144, 91, 253), rgb(216, 53, 46));
+      font-family: serif;
+    }
+    & #starters-chic {
+      color: rgb(198, 116, 18);
+    }
+
+    & #dishes-chic {
+      color: rgb(165, 103, 153);
+    }
+
+    & #deserts-chic {
+      color: rgb(110, 76, 204);
+    }
+  }
+
+  > #menu-palette {
+    background: $color-palette-fond;
+    & #title-palette {
+      @include gradient(rgb(191, 255, 126), rgb(56, 151, 60));
+      font-family: serif;
     }
   }
 }

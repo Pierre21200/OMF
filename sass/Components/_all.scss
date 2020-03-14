@@ -12,13 +12,6 @@
   justify-content: center;
   align-items: center;
 
-  &__icon {
-    padding-bottom: 1em;
-    & i {
-      @include gradient(rgb(240, 81, 96), rgb(246, 145, 106));
-    }
-  }
-
   &__title {
     & p {
       font-weight: bold;
@@ -42,6 +35,12 @@
   &__title,
   &__content {
     color: $color-note-texte;
+  }
+  & .menu__icon {
+    padding-bottom: 1em;
+    & i {
+      @include gradient(rgb(240, 81, 96), rgb(246, 145, 106));
+    }
   }
 }
 
