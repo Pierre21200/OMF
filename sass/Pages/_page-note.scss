@@ -39,9 +39,10 @@
 
       & .title {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         text-align: center;
         font-weight: bold;
+        align-items: center;
       }
 
       & .choice {

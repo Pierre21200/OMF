@@ -53,6 +53,13 @@ body {
   justify-content: center;
   align-items: center;
 }
+.menu__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
 .menu__title p {
   font-weight: bold;
   font-style: italic;
@@ -124,28 +131,57 @@ body {
   font-size: 20px;
   padding: 0px;
   color: #fdcb46;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.prochainement__container button p {
+  color: #fdcb46;
+  margin: 0px;
+  font-size: 25px;
+}
+.prochainement__container button .point-1 {
+  margin-left: 5px;
+  font-weight: bold;
+}
+.prochainement__container button .point-2,
+.prochainement__container button .point-3 {
+  margin-left: 2px;
+  font-weight: bold;
 }
 
 .btn__container {
   display: flex;
   width: 50%;
+  text-align: center;
+  align-items: center;
 }
 .btn__container button {
-  height: 100%;
+  height: 50%;
   font-size: 20px;
   background-color: #579c87;
   border: 0px;
   color: #fdcb46;
+}
+.btn__container button:hover {
+  animation: wiggle 300ms infinite;
+  cursor: pointer;
 }
 
 #contact {
   justify-content: flex-end;
   margin-right: 20px;
 }
+#contact > a {
+  margin: 0px;
+}
 
 #mentions {
   justify-content: flex-start;
   margin-left: 20px;
+}
+#mentions > a {
+  margin: 0px;
 }
 
 .menu-container {
@@ -187,9 +223,10 @@ body {
 }
 .menu-container > .menu-verso > .menu-section .title {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   text-align: center;
   font-weight: bold;
+  align-items: center;
 }
 .menu-container > .menu-verso > .menu-section .choice {
   display: flex;
@@ -270,18 +307,94 @@ body {
   font-family: serif;
 }
 
-.title p,
-.title p::before,
-.title p::after {
-  display: inline-block;
-  vertical-align: middle;
-}
-.title p::before,
-.title p::after {
+.line-before,
+.line-after {
+  width: 30%;
   height: 5px;
-  width: 120px;
-  background: orange;
-  content: "";
+  transform: scale(0);
+  transition: transform 800ms ease-in-out;
+}
+
+.title:hover > .line-after {
+  transform: scale(1);
+  transform-origin: left;
+}
+.title:hover > .line-before {
+  transform: scale(1);
+  transform-origin: right;
+}
+
+.line-palette {
+  background-color: linear-gradient(to right, green, white);
+}
+
+@keyframes suspension-1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes suspension-2 {
+  0% {
+    transform: scale(0);
+  }
+  33% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes suspension-3 {
+  0% {
+    transform: scale(0);
+  }
+  66% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.point-1 {
+  transform-origin: center;
+  animation: suspension-1 2000ms both infinite;
+}
+
+.point-2 {
+  transform-origin: center;
+  animation: suspension-2 2000ms both infinite;
+}
+
+.point-3 {
+  transform-origin: center;
+  animation: suspension-3 2000ms both infinite;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(-5deg);
+  }
+}
+@media (max-width: 1024px) {
+  .menu {
+    width: 210px;
+    height: 297px;
+  }
+}
+@media (max-width: 900px) {
+  .menu {
+    width: 168px;
+    height: 237.6px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
