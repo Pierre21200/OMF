@@ -1,17 +1,129 @@
-// h1 {
-// font-size: 72px;
-// background: -webkit-linear-gradient(#eee, #333);
-// -webkit-background-clip: text;
-// -webkit-text-fill-color: transparent;
-//
-
-// https://css-tricks.com/snippets/css/gradient-text/
-
 @import './Utils/variables';
 @import './Utils/mixins';
-@import './Layout/header-footer-section';
 @import './Base/html&body';
-@import './Components/acceuil';
-@import './Pages/page-note';
+@import './Pages/page-menu';
 @import './Utils/animations';
-@import './Utils/media-queries';
+@import './Layout/header&footer';
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 70px; // ça va poser problème quand mon footer va changer de taille, il faudra changer cette valeur avec queries
+  height: 100%;
+
+  & .menus-container {
+    width: 95%;
+    height: 70%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    & a {
+      text-decoration: none;
+      width: 22%;
+      height: 100%;
+      box-shadow: 0px 0px 10px 0px rgb(158, 158, 158);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      & .menu__title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        & p {
+          font-weight: bold;
+          font-style: italic;
+          font-size: 20px;
+          margin: auto;
+          display: flex;
+        }
+      }
+      & .menu__content {
+        text-align: center;
+        & p {
+          font-weight: bold;
+          font-style: italic;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+#note {
+  background-color: $color-note-fond;
+
+  &__title,
+  &__content {
+    color: $color-note-texte;
+  }
+  & .menu__icon {
+    padding-bottom: 1em;
+    display: flex;
+    justify-content: center;
+
+    & i {
+      @include gradient(rgb(240, 81, 96), rgb(246, 145, 106));
+    }
+  }
+}
+
+#chic {
+  background-color: $color-chic-fond;
+  &__title,
+  &__content {
+    @include gradient(rgb(144, 91, 253), rgb(216, 53, 46));
+  }
+}
+
+#delice {
+  background-color: $color-delice-fond;
+  &__title,
+  &__content {
+    @include gradient(rgb(108, 178, 249), rgb(4, 49, 223));
+  }
+}
+
+#palette {
+  background-color: $color-palette-fond;
+  &__title,
+  &__content {
+    @include gradient(rgb(191, 255, 126), rgb(56, 151, 60));
+  }
+}
+
+.prochainement__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30%;
+
+  & button {
+    border-radius: 10px 10px 10px 10px;
+    border: 2px;
+    background-color: $color-primary;
+    font-size: 20px;
+    color: $color-secondary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20px 0px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & .point-1 {
+      margin-left: 5px;
+      font-weight: bold;
+    }
+    & .point-2,
+    .point-3 {
+      margin-left: 2px;
+      font-weight: bold;
+    }
+  }
+}

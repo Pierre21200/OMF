@@ -1,31 +1,27 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
+    <link rel="stylesheet" href="./css/style.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="./css/style.css" />
     <script src="https://kit.fontawesome.com/b3ea1b0c27.js" crossorigin="anonymous"></script>
-    <title>OhMyFood!</title>
+    <title>Document</title>
   </head>
-
-  <!--Penser à commenter notre code !-->
-
   <body>
     <header>
-      <!-- Refaire une div pour le p ? -->
-    <a href="index.html">
-      <p>
-        ohmyfood
-      </p>
-    </a>
+      <div class="header">
+        <a href="index.html">
+          <p>
+            ohmyfood
+          </p>
+        </a>
+      </div>
     </header>
     <section>
-      <!-- 1 div qui englabes 4 divs pour les menus, 1 div pour le bouton prochainement -->
       <div class="menus-container">
         <!-- <a href="page-2.html"> -->
-      <a href="page-note.html">
-        <div class="menu" id="note">
-
+        <a href="page-note.html" id="note">
+          <div class="menu">
             <div class="menu__icon">
               <i class="fas fa-music fa-2x"></i>
             </div>
@@ -35,49 +31,42 @@
             <div class="menu__content">
               <p id="note__content">MENU</p>
             </div>
-
-        </div>
-      </a>
+          </div>
+        </a>
 
         <a href="page-chic.html">
           <div class="menu" id="chic">
-
             <div class="menu__title">
               <p id="chic__title">Le chic à la française</p>
             </div>
             <div class="menu__content">
               <p id="chic__content">MENU</p>
             </div>
-
           </div>
         </a>
 
         <a href="page-delice.html">
           <div class="menu" id="delice">
-
             <div class="menu__title">
               <p id="delice__title">Le délice des papilles</p>
             </div>
             <div class="menu__content">
               <p id="delice__content">MENU</p>
             </div>
-
           </div>
         </a>
 
         <a href="page-palette.html">
           <div class="menu" id="palette">
-
-          <div class="menu__title">
-            <p id="palette__title">La palette du goût</p>
+            <div class="menu__title">
+              <p id="palette__title">La palette du goût</p>
+            </div>
+            <div class="menu__content">
+              <p id="palette__content">MENU</p>
+            </div>
           </div>
-          <div class="menu__content">
-            <p id="palette__content">MENU</p>
-          </div>
-          </div>
-
+        </a>
       </div>
-    </a>
 
       <div class="prochainement__container">
         <button>
@@ -88,18 +77,17 @@
         </button>
       </div>
     </section>
-
     <footer>
       <div class="btn__container" id="mentions">
         <a href="page-mentions-legales.html">
-        <button>Mentions Légales</button>
+          <button>Mentions Légales</button>
         </a>
       </div>
 
       <div class="btn__container" id="contact">
         <a href="mailto:pierrepotin21@gmail.com?">
-        <button>Contactez-nous</button>
-      </a>
+          <button>Contactez-nous</button>
+        </a>
       </div>
     </footer>
   </body>
