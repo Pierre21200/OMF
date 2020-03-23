@@ -3,12 +3,9 @@
 header {
   display: flex;
   justify-content: center;
-  align-items: center;
   background-color: $color-primary;
-  font-size: 25px;
-  height: 15%;
   & p {
-    margin: auto;
+    margin: 15px;
     color: $color-secondary;
     font-size: 50px;
     font-weight: bold;
@@ -24,7 +21,6 @@ footer {
   justify-content: center;
   align-items: center;
   background-color: $color-primary;
-  font-size: 15px;
   position: fixed;
   bottom: 0px;
   width: 100%;
@@ -36,11 +32,13 @@ footer {
   width: 50%;
 
   & button {
-    height: 50%;
-    font-size: 20px;
     background-color: $color-primary;
     border: 0px;
     color: $color-secondary;
+    & p {
+      font-size: 20px;
+      margin: 0;
+    }
     &:hover {
       animation: wiggle 300ms infinite;
       cursor: pointer;
