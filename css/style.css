@@ -403,4 +403,56 @@ section .menus-container a .menu__content p {
   font-weight: bold;
 }
 
+@media screen and (min-width: 300px) and (max-width: 374px) {
+  section {
+    padding-top: 25px;
+  }
+}
+@media screen and (min-width: 374px) and (max-width: 767px) {
+  section {
+    padding-top: 10px;
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 374px) {
+  .menus-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 375px) {
+  .menus-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 374px) {
+  section .menus-container a {
+    width: 80%;
+    margin: 20px 0px 25px 0px;
+    height: 350px;
+  }
+}
+@media screen and (min-width: 374px) and (max-width: 767px) {
+  section .menus-container a {
+    width: 40%;
+    height: 190px;
+    margin: 12px 0px 12px 0px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1025px) {
+  section .menus-container a {
+    width: 22%;
+    height: 350px;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 380px) {
+  .btn__container button p {
+    font-size: 16px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
