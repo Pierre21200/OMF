@@ -250,7 +250,7 @@ header p {
   color: #fdcb46;
   font-size: 50px;
   font-weight: bold;
-  font-family: "Berlin Sans FB Demi", sans-serif;
+  font-family: 'Berlin Sans FB Demi', sans-serif;
 }
 header a {
   text-decoration: none;
@@ -345,7 +345,8 @@ section .menus-container a .menu__content p {
 #note {
   background-color: #fcdfdb;
 }
-#note__title, #note__content {
+#note__title,
+#note__content {
   color: #3c1218;
 }
 #note .menu__icon {
@@ -362,7 +363,8 @@ section .menus-container a .menu__content p {
 #chic {
   background-color: #fff5fe;
 }
-#chic__title, #chic__content {
+#chic__title,
+#chic__content {
   background: -webkit-linear-gradient(#905bfd, #d8352e);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -371,7 +373,8 @@ section .menus-container a .menu__content p {
 #delice {
   background-color: #f9f9f9;
 }
-#delice__title, #delice__content {
+#delice__title,
+#delice__content {
   background: -webkit-linear-gradient(#6cb2f9, #0431df);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -380,7 +383,8 @@ section .menus-container a .menu__content p {
 #palette {
   background-color: #fdfffd;
 }
-#palette__title, #palette__content {
+#palette__title,
+#palette__content {
   background: -webkit-linear-gradient(#bfff7e, #38973c);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -476,8 +480,8 @@ section .menus-container a .menu__content p {
     align-items: center;
   }
   .menu-container .menu-verso .menu-section > .starters,
-.menu-container .menu-verso .menu-section .dishes,
-.menu-container .menu-verso .menu-section .deserts {
+  .menu-container .menu-verso .menu-section .dishes,
+  .menu-container .menu-verso .menu-section .deserts {
     width: 100%;
     margin-bottom: 30px;
   }
