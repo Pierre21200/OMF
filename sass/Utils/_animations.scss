@@ -71,8 +71,6 @@
   }
 }
 
-// essai animation d'une img
-
 .title {
   &:hover > .img-deco {
     animation: deco 1000ms both;
@@ -83,4 +81,17 @@
       transform-origin: right;
     }
   }
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+
+.menus-container a:hover {
+  animation: zoom 500ms both;
 }
