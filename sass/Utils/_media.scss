@@ -1,8 +1,8 @@
-@media screen and (min-width: 300px) and (max-width: 374px) {
+@media screen and (min-width: 300px) and (max-width: 767px) {
   header {
     height: auto;
     & p {
-      font-size: 25px;
+      font-size: 30px;
     }
   }
   .section-home {
@@ -10,9 +10,15 @@
       flex-direction: column;
       align-items: center;
       > a {
-        width: 75%;
+        width: 70%;
         margin-top: 30px;
         height: 300px;
+        & .menu__title,
+        & .menu__content {
+          & p {
+            font-size: 17px;
+          }
+        }
       }
     }
     > .prochainement__container {
@@ -22,89 +28,64 @@
     }
   }
   footer {
-    > .btn-container {
-      > button {
-        font-size: 15px;
+    > .btn__container a button {
+      font-size: 15px;
+    }
+  }
+}
+
+@media screen and (min-width: 374px) and (max-width: 767px) {
+  .section-home {
+    > .menus-container {
+      flex-direction: row;
+      flex-wrap: wrap;
+      > a {
+        width: 40%;
+        margin-top: 20px;
+        height: 200px;
       }
     }
   }
 }
 
-// .section-home {
-//   > .menus-container {
-//     @media screen and (min-width: 300px) and (max-width: 374px) {
-//       align-items: center;
-//     }
-//   }
-// }
-// section {
-//   @media screen and (min-width: 300px) and (max-width: 374px) {
-//   }
-//   @media screen and (min-width: 374px) and (max-width: 767px) {
-//     padding-top: 10px;
-//   }
-// }
-// .menus-container {
-//   @media screen and (min-width: 300px) and (max-width: 374px) {
-//     flex-direction: column;
-//     justify-content: center;
-//     align-items: center;
-//   }
-//   @media screen and (min-width: 375px) {
-//     flex-direction: row;
-//     flex-wrap: wrap;
-//   }
-// }
-
-// section .menus-container a {
-//   @media (min-width: 300px) and (max-width: 374px) {
-//     width: 80%;
-//     margin: 20px 0px 25px 0px;
-//     height: 350px;
-//   }
-//   @media screen and (min-width: 374px) and (max-width: 767px) {
-//     width: 40%;
-//     height: 190px;
-//     margin: 12px 0px 12px 0px;
-//   }
-//   @media screen and (min-width: 768px) and (max-width: 1025px) {
-//     width: 22%;
-//     height: 350px;
-//   }
-// }
-
-// .btn__container button p {
-//   @media (min-width: 300px) and (max-width: 380px) {
-//     font-size: 16px;
-//   }
-// }
-
-// .menu-container .menu-verso .menu-section {
-//   @media screen and (min-width: 300px) and (max-width: 426px) {
-//     flex-direction: column;
-//     justify-content: center;
-//     align-items: center;
-//     > .starters,
-//     .dishes,
-//     .deserts {
-//       width: 100%;
-//       margin-bottom: 30px;
-//     }
-//   }
-// }
-
-// @media screen and (min-width: 767px) and (max-width: 950px) {
-//   #menu-note .menu-section .starters .title {
-//     margin-bottom: 18px;
-//   }
-//   #menu-chic .menu-section .starters .title p {
-//     margin-bottom: 0;
-//   }
-//   #menu-palette .menu-section .starters .title {
-//     margin-bottom: 18px;
-//   }
-//   #menu-palette .menu-section .deserts .title p {
-//     margin-top: 0px;
-//     margin-bottom: 14px;
-//   }
-// };
+@media screen and (min-width: 767px) and (max-width: 1200px) {
+  .section-home {
+    > .menus-container {
+      > a {
+        height: 300px;
+        width: 20%;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1400px) and (max-width: 2500px) {
+  header {
+    height: auto;
+    & p {
+      font-size: 60px;
+    }
+  }
+  .section-home {
+    > .menus-container {
+      > a {
+        height: 350px;
+        & .menu__title,
+        & .menu__content {
+          & p {
+            font-size: 25px;
+          }
+        }
+      }
+    }
+    > .prochainement__container {
+      > button {
+        font-size: 25px;
+      }
+    }
+  }
+  footer {
+    > .btn__container a button {
+      font-size: 25px;
+    }
+  }
+}

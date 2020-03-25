@@ -273,14 +273,11 @@ footer {
   display: flex;
   width: 50%;
 }
-.btn__container a {
-  text-decoration: none;
-  color: #fdcb46;
-}
 .btn__container button {
   background-color: #579c87;
   border: 0px;
   font-size: 20px;
+  color: #fdcb46;
 }
 .btn__container button:hover {
   animation: wiggle 300ms infinite;
@@ -402,7 +399,6 @@ section .menus-container a .menu__content p {
   min-height: 20vh;
 }
 .prochainement__container button {
-  height: 40px;
   cursor: pointer;
   border-radius: 10px 10px 10px 10px;
   border: 2px;
@@ -412,7 +408,7 @@ section .menus-container a .menu__content p {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0px 20px 0px 20px;
+  padding: 10px 20px 10px 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -427,12 +423,12 @@ section .menus-container a .menu__content p {
   font-weight: bold;
 }
 
-@media screen and (min-width: 300px) and (max-width: 374px) {
+@media screen and (min-width: 300px) and (max-width: 767px) {
   header {
     height: auto;
   }
   header p {
-    font-size: 25px;
+    font-size: 30px;
   }
 
   .section-home > .menus-container {
@@ -440,16 +436,58 @@ section .menus-container a .menu__content p {
     align-items: center;
   }
   .section-home > .menus-container > a {
-    width: 75%;
+    width: 70%;
     margin-top: 30px;
     height: 300px;
+  }
+  .section-home > .menus-container > a .menu__title p, .section-home > .menus-container > a .menu__content p {
+    font-size: 17px;
   }
   .section-home > .prochainement__container > button {
     font-size: 17px;
   }
 
-  footer > .btn-container > button {
+  footer > .btn__container a button {
     font-size: 15px;
+  }
+}
+@media screen and (min-width: 374px) and (max-width: 767px) {
+  .section-home > .menus-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .section-home > .menus-container > a {
+    width: 40%;
+    margin-top: 20px;
+    height: 200px;
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 1200px) {
+  .section-home > .menus-container > a {
+    height: 300px;
+    width: 20%;
+  }
+}
+@media screen and (min-width: 1400px) and (max-width: 2500px) {
+  header {
+    height: auto;
+  }
+  header p {
+    font-size: 60px;
+  }
+
+  .section-home > .menus-container > a {
+    height: 350px;
+  }
+  .section-home > .menus-container > a .menu__title p, .section-home > .menus-container > a .menu__content p {
+    font-size: 25px;
+  }
+  .section-home > .prochainement__container > button {
+    font-size: 25px;
+  }
+
+  footer > .btn__container a button {
+    font-size: 25px;
   }
 }
 

@@ -31,22 +31,18 @@ footer {
 .btn__container {
   display: flex;
   width: 50%;
-  & a {
-    text-decoration: none;
-    color: $color-secondary;
-  }
+
   & button {
     background-color: $color-primary;
     border: 0px;
-
     font-size: 20px;
+    color: $color-secondary;
     &:hover {
       animation: wiggle 300ms infinite;
       cursor: pointer;
     }
   }
 }
-
 #contact {
   justify-content: flex-end;
   padding-right: 20px;
