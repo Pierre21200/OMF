@@ -31,11 +31,14 @@ footer {
 .btn__container {
   display: flex;
   width: 50%;
-
+  & a {
+    text-decoration: none;
+    color: $color-secondary;
+  }
   & button {
     background-color: $color-primary;
     border: 0px;
-    color: $color-secondary;
+
     font-size: 20px;
     &:hover {
       animation: wiggle 300ms infinite;

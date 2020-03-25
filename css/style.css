@@ -273,10 +273,13 @@ footer {
   display: flex;
   width: 50%;
 }
+.btn__container a {
+  text-decoration: none;
+  color: #fdcb46;
+}
 .btn__container button {
   background-color: #579c87;
   border: 0px;
-  color: #fdcb46;
   font-size: 20px;
 }
 .btn__container button:hover {
