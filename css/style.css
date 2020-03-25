@@ -24,7 +24,7 @@ body {
   width: 90%;
   font-family: sans-serif;
   font-style: italic;
-  padding: 0px 10px 5px 10px;
+  padding: 5px 10px 20px 10px;
 }
 .menu-container .menu-verso > .menu-header {
   display: flex;
@@ -94,6 +94,7 @@ body {
   font-size: 25px;
 }
 .menu-container > #menu-note {
+  padding: 0;
   background-color: #fcdfdb;
   color: #3c1218;
 }
@@ -244,13 +245,14 @@ header {
   display: flex;
   justify-content: center;
   background-color: #579c87;
+  height: 15vh;
 }
 header p {
   margin: 15px;
   color: #fdcb46;
   font-size: 50px;
   font-weight: bold;
-  font-family: 'Berlin Sans FB Demi', sans-serif;
+  font-family: "Berlin Sans FB Demi", sans-serif;
 }
 header a {
   text-decoration: none;
@@ -264,7 +266,7 @@ footer {
   position: fixed;
   bottom: 0px;
   width: 100%;
-  height: 7%;
+  height: 7vh;
 }
 
 .btn__container {
@@ -275,10 +277,7 @@ footer {
   background-color: #579c87;
   border: 0px;
   color: #fdcb46;
-}
-.btn__container button p {
   font-size: 20px;
-  margin: 0;
 }
 .btn__container button:hover {
   animation: wiggle 300ms infinite;
@@ -295,19 +294,26 @@ footer {
   padding-left: 20px;
 }
 
+.section-home {
+  padding-bottom: 7vh;
+  min-height: 71vh;
+}
+
 section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-bottom: 70px;
-  padding-top: 30px;
+  padding-bottom: 12vh;
+  min-height: 66vh;
 }
 section .menus-container {
   display: flex;
   justify-content: space-around;
+  align-items: flex-end;
   width: 100%;
+  min-height: 58vh;
 }
 section .menus-container a {
   text-decoration: none;
@@ -345,8 +351,7 @@ section .menus-container a .menu__content p {
 #note {
   background-color: #fcdfdb;
 }
-#note__title,
-#note__content {
+#note__title, #note__content {
   color: #3c1218;
 }
 #note .menu__icon {
@@ -363,8 +368,7 @@ section .menus-container a .menu__content p {
 #chic {
   background-color: #fff5fe;
 }
-#chic__title,
-#chic__content {
+#chic__title, #chic__content {
   background: -webkit-linear-gradient(#905bfd, #d8352e);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -373,8 +377,7 @@ section .menus-container a .menu__content p {
 #delice {
   background-color: #f9f9f9;
 }
-#delice__title,
-#delice__content {
+#delice__title, #delice__content {
   background: -webkit-linear-gradient(#6cb2f9, #0431df);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -383,8 +386,7 @@ section .menus-container a .menu__content p {
 #palette {
   background-color: #fdfffd;
 }
-#palette__title,
-#palette__content {
+#palette__title, #palette__content {
   background: -webkit-linear-gradient(#bfff7e, #38973c);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -394,10 +396,11 @@ section .menus-container a .menu__content p {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 30%;
-  margin-top: 40px;
+  min-height: 20vh;
 }
 .prochainement__container button {
+  height: 40px;
+  cursor: pointer;
   border-radius: 10px 10px 10px 10px;
   border: 2px;
   background-color: #579c87;
@@ -422,87 +425,28 @@ section .menus-container a .menu__content p {
 }
 
 @media screen and (min-width: 300px) and (max-width: 374px) {
-  section {
-    padding-top: 25px;
+  header {
+    height: auto;
   }
-}
-@media screen and (min-width: 374px) and (max-width: 767px) {
-  section {
-    padding-top: 10px;
+  header p {
+    font-size: 25px;
   }
-}
 
-@media screen and (min-width: 300px) and (max-width: 374px) {
-  .menus-container {
+  .section-home > .menus-container {
     flex-direction: column;
-    justify-content: center;
     align-items: center;
   }
-}
-@media screen and (min-width: 375px) {
-  .menus-container {
-    flex-direction: row;
-    flex-wrap: wrap;
+  .section-home > .menus-container > a {
+    width: 75%;
+    margin-top: 30px;
+    height: 300px;
   }
-}
-
-@media (min-width: 300px) and (max-width: 374px) {
-  section .menus-container a {
-    width: 80%;
-    margin: 20px 0px 25px 0px;
-    height: 350px;
-  }
-}
-@media screen and (min-width: 374px) and (max-width: 767px) {
-  section .menus-container a {
-    width: 40%;
-    height: 190px;
-    margin: 12px 0px 12px 0px;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1025px) {
-  section .menus-container a {
-    width: 22%;
-    height: 350px;
-  }
-}
-
-@media (min-width: 300px) and (max-width: 380px) {
-  .btn__container button p {
-    font-size: 16px;
-  }
-}
-
-@media screen and (min-width: 300px) and (max-width: 426px) {
-  .menu-container .menu-verso .menu-section {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .menu-container .menu-verso .menu-section > .starters,
-  .menu-container .menu-verso .menu-section .dishes,
-  .menu-container .menu-verso .menu-section .deserts {
-    width: 100%;
-    margin-bottom: 30px;
-  }
-}
-
-@media screen and (min-width: 767px) and (max-width: 950px) {
-  #menu-note .menu-section .starters .title {
-    margin-bottom: 18px;
+  .section-home > .prochainement__container > button {
+    font-size: 17px;
   }
 
-  #menu-chic .menu-section .starters .title p {
-    margin-bottom: 0;
-  }
-
-  #menu-palette .menu-section .starters .title {
-    margin-bottom: 18px;
-  }
-
-  #menu-palette .menu-section .deserts .title p {
-    margin-top: 0px;
-    margin-bottom: 14px;
+  footer > .btn-container > button {
+    font-size: 15px;
   }
 }
 
