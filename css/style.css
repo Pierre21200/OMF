@@ -297,7 +297,7 @@ footer {
 
 .section-home {
   padding-bottom: 7vh;
-  min-height: 71vh;
+  min-height: 82vh;
 }
 
 section {
@@ -429,6 +429,11 @@ section .menus-container a .menu__content p {
     font-size: 30px;
   }
 }
+@media screen and (min-width: 1025px) {
+  header p {
+    font-size: 75px;
+  }
+}
 
 @media screen and (max-width: 400px) {
   section .menus-container {
@@ -437,7 +442,7 @@ section .menus-container a .menu__content p {
     align-items: center;
   }
 }
-@media screen and (min-width: 400px) and (max-width: 768px) {
+@media screen and (min-width: 400px) and (max-width: 1024px) {
   section .menus-container {
     flex-direction: row;
     flex-wrap: wrap;
@@ -449,7 +454,7 @@ section .menus-container a .menu__content p {
     margin-top: 30px;
   }
 }
-@media screen and (min-width: 400px) and (max-width: 768px) {
+@media screen and (min-width: 400px) and (max-width: 1024px) {
   section .menus-container > a {
     width: 40%;
     height: 40vh;
@@ -462,15 +467,31 @@ section .menus-container > a .menu__content p {
     font-size: 15px;
   }
 }
+@media screen and (min-width: 1024px) {
+  section .menus-container > a .menu__title p,
+section .menus-container > a .menu__content p {
+    font-size: 50px;
+  }
+}
 @media screen and (max-width: 400px) {
   section .prochainement__container button {
     font-size: 15px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  section .prochainement__container button {
+    font-size: 45px;
   }
 }
 
 @media screen and (max-width: 400px) {
   footer .btn__container a button {
     font-size: 15px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  footer .btn__container a button {
+    font-size: 45px;
   }
 }
 

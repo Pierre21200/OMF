@@ -5,6 +5,9 @@ header {
     @media screen and (max-width: 400px) {
       font-size: 30px;
     }
+    @media screen and (min-width: 1025px) {
+      font-size: 75px;
+    }
   }
 }
 
@@ -15,7 +18,7 @@ section {
       justify-content: center;
       align-items: center;
     }
-    @media screen and (min-width: 400px) and (max-width: 768px) {
+    @media screen and (min-width: 400px) and (max-width: 1024px) {
       flex-direction: row;
       flex-wrap: wrap;
     }
@@ -24,16 +27,20 @@ section {
         width: 70%;
         margin-top: 30px;
       }
-      @media screen and (min-width: 400px) and (max-width: 768px) {
+      @media screen and (min-width: 400px) and (max-width: 1024px) {
         width: 40%;
         height: 40vh;
         margin-top: 25px;
       }
-      @media screen and (max-width: 400px) {
-        & .menu__title,
-        .menu__content {
-          & p {
+
+      & .menu__title,
+      .menu__content {
+        & p {
+          @media screen and (max-width: 400px) {
             font-size: 15px;
+          }
+          @media screen and (min-width: 1024px) {
+            font-size: 50px;
           }
         }
       }
@@ -44,6 +51,9 @@ section {
       @media screen and (max-width: 400px) {
         font-size: 15px;
       }
+      @media screen and (min-width: 1024px) {
+        font-size: 45px;
+      }
     }
   }
 }
@@ -51,5 +61,8 @@ section {
 footer .btn__container a button {
   @media screen and (max-width: 400px) {
     font-size: 15px;
+  }
+  @media screen and (min-width: 1024px) {
+    font-size: 45px;
   }
 }
