@@ -3,14 +3,15 @@
 header {
   display: flex;
   justify-content: center;
+  align-items: center;
   background-color: $color-primary;
-  height: 15vh;
+  height: 11vh;
   & p {
-    margin: 15px;
     color: $color-secondary;
     font-size: 50px;
     font-weight: bold;
     font-family: 'Berlin Sans FB Demi', sans-serif;
+    margin: 0px;
   }
   & a {
     text-decoration: none;

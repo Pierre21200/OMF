@@ -244,15 +244,16 @@ body {
 header {
   display: flex;
   justify-content: center;
+  align-items: center;
   background-color: #579c87;
-  height: 15vh;
+  height: 11vh;
 }
 header p {
-  margin: 15px;
   color: #fdcb46;
   font-size: 50px;
   font-weight: bold;
   font-family: "Berlin Sans FB Demi", sans-serif;
+  margin: 0px;
 }
 header a {
   text-decoration: none;
@@ -421,6 +422,56 @@ section .menus-container a .menu__content p {
 .prochainement__container button .point-3 {
   margin-left: 2px;
   font-weight: bold;
+}
+
+@media screen and (max-width: 400px) {
+  header p {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  section .menus-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 400px) and (max-width: 768px) {
+  section .menus-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 400px) {
+  section .menus-container > a {
+    width: 70%;
+    margin-top: 30px;
+  }
+}
+@media screen and (min-width: 400px) and (max-width: 768px) {
+  section .menus-container > a {
+    width: 40%;
+    height: 40vh;
+    margin-top: 25px;
+  }
+}
+@media screen and (max-width: 400px) {
+  section .menus-container > a .menu__title p,
+section .menus-container > a .menu__content p {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 400px) {
+  section .prochainement__container button {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  footer .btn__container a button {
+    font-size: 15px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
