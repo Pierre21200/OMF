@@ -442,7 +442,7 @@ section .menus-container a .menu__content p {
     align-items: center;
   }
 }
-@media screen and (min-width: 400px) and (max-width: 1024px) {
+@media screen and (min-width: 400px) and (max-width: 1025px) {
   section .menus-container {
     flex-direction: row;
     flex-wrap: wrap;
@@ -454,7 +454,7 @@ section .menus-container a .menu__content p {
     margin-top: 30px;
   }
 }
-@media screen and (min-width: 400px) and (max-width: 1024px) {
+@media screen and (min-width: 400px) and (max-width: 1025px) {
   section .menus-container > a {
     width: 40%;
     height: 40vh;
@@ -478,7 +478,7 @@ section .menus-container > a .menu__content p {
     font-size: 15px;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
   section .prochainement__container button {
     font-size: 45px;
   }
@@ -489,7 +489,7 @@ section .menus-container > a .menu__content p {
     font-size: 15px;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
   footer .btn__container a button {
     font-size: 45px;
   }
