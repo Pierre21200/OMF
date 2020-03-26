@@ -429,7 +429,7 @@ section .menus-container a .menu__content p {
     font-size: 30px;
   }
 }
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1500px) {
   header p {
     font-size: 75px;
   }
@@ -467,7 +467,7 @@ section .menus-container > a .menu__content p {
     font-size: 15px;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1500px) {
   section .menus-container > a .menu__title p,
 section .menus-container > a .menu__content p {
     font-size: 50px;
@@ -478,7 +478,7 @@ section .menus-container > a .menu__content p {
     font-size: 15px;
   }
 }
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1500px) {
   section .prochainement__container button {
     font-size: 45px;
   }
@@ -489,7 +489,7 @@ section .menus-container > a .menu__content p {
     font-size: 15px;
   }
 }
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1500px) {
   footer .btn__container a button {
     font-size: 45px;
   }
