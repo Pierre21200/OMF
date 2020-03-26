@@ -470,7 +470,7 @@ section .menus-container > a .menu__content p {
 @media screen and (min-width: 1500px) {
   section .menus-container > a .menu__title p,
 section .menus-container > a .menu__content p {
-    font-size: 50px;
+    font-size: 25px;
   }
 }
 @media screen and (max-width: 400px) {
