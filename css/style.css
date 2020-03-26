@@ -318,7 +318,7 @@ section .menus-container {
 section .menus-container a {
   text-decoration: none;
   width: 18%;
-  height: 350px;
+  height: 55vh;
   box-shadow: 0px 0px 10px 0px #9e9e9e;
   display: flex;
   flex-direction: column;
@@ -421,74 +421,6 @@ section .menus-container a .menu__content p {
 .prochainement__container button .point-3 {
   margin-left: 2px;
   font-weight: bold;
-}
-
-@media screen and (min-width: 300px) and (max-width: 767px) {
-  header {
-    height: auto;
-  }
-  header p {
-    font-size: 30px;
-  }
-
-  .section-home > .menus-container {
-    flex-direction: column;
-    align-items: center;
-  }
-  .section-home > .menus-container > a {
-    width: 70%;
-    margin-top: 30px;
-    height: 300px;
-  }
-  .section-home > .menus-container > a .menu__title p, .section-home > .menus-container > a .menu__content p {
-    font-size: 17px;
-  }
-  .section-home > .prochainement__container > button {
-    font-size: 17px;
-  }
-
-  footer > .btn__container a button {
-    font-size: 15px;
-  }
-}
-@media screen and (min-width: 374px) and (max-width: 767px) {
-  .section-home > .menus-container {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  .section-home > .menus-container > a {
-    width: 40%;
-    margin-top: 20px;
-    height: 200px;
-  }
-}
-@media screen and (min-width: 767px) and (max-width: 1200px) {
-  .section-home > .menus-container > a {
-    height: 300px;
-    width: 20%;
-  }
-}
-@media screen and (min-width: 1400px) and (max-width: 2500px) {
-  header {
-    height: auto;
-  }
-  header p {
-    font-size: 60px;
-  }
-
-  .section-home > .menus-container > a {
-    height: 350px;
-  }
-  .section-home > .menus-container > a .menu__title p, .section-home > .menus-container > a .menu__content p {
-    font-size: 25px;
-  }
-  .section-home > .prochainement__container > button {
-    font-size: 25px;
-  }
-
-  footer > .btn__container a button {
-    font-size: 25px;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */
