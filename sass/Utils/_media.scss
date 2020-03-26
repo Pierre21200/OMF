@@ -18,7 +18,7 @@ section {
       justify-content: center;
       align-items: center;
     }
-    @media screen and (min-width: 400px) and (max-width: 1025px) {
+    @media screen and (min-width: 400px) and (max-width: 1023px) {
       flex-direction: row;
       flex-wrap: wrap;
     }
@@ -27,7 +27,7 @@ section {
         width: 70%;
         margin-top: 30px;
       }
-      @media screen and (min-width: 400px) and (max-width: 1025px) {
+      @media screen and (min-width: 400px) and (max-width: 1023px) {
         width: 40%;
         height: 40vh;
         margin-top: 25px;
@@ -64,5 +64,101 @@ footer .btn__container a button {
   }
   @media screen and (min-width: 1400px) {
     font-size: 45px;
+  }
+}
+
+// page menu
+section {
+  > .menu-container {
+    > .menu-verso {
+      > .menu-section {
+        @media screen and (max-width: 768px) {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          > .starters,
+          .dishes,
+          .deserts {
+            width: 90%;
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+#menu-note {
+  & .dishes {
+    & .title {
+      & p {
+        @media screen and (min-width: 768px) and (max-width: 950px) {
+          margin: 7px 0px 7px 0px;
+        }
+      }
+    }
+  }
+  & .deserts {
+    & .title {
+      & p {
+        @media screen and (min-width: 768px) and (max-width: 950px) {
+          margin: 7px 0px 7px 0px;
+        }
+        @media screen and (min-width: 950px) and (max-width: 1170px) {
+          margin: 7px 0px 7px 0px;
+        }
+      }
+    }
+  }
+}
+
+#menu-chic {
+  & .starters {
+    & .title {
+      & p {
+        @media screen and (min-width: 768px) and (max-width: 950px) {
+          margin: 7px 0px 7px 0px;
+        }
+      }
+    }
+  }
+}
+
+#menu-delice {
+  & .deserts {
+    & .title {
+      & p {
+        @media screen and (min-width: 1316px) {
+          margin: 25px 0px 25px 0px;
+        }
+      }
+    }
+  }
+}
+
+#menu-palette {
+  & .starters {
+    & .title {
+      & p {
+        @media screen and (min-width: 768px) and (max-width: 1210px) {
+          margin: 25px 0px 25px 0px;
+        }
+        // @media screen and (min-width: 1210px) {
+        //   margin: 25px 0px 25px 0px;
+        // }
+      }
+    }
+  }
+  & .deserts {
+    & .title {
+      & p {
+        @media screen and (min-width: 768px) and (max-width: 1210px) {
+          margin: 25px 0px 25px 0px;
+        }
+        @media screen and (min-width: 1210px) {
+          margin: 7px 0px 7px 0px;
+        }
+      }
+    }
   }
 }
