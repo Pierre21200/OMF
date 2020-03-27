@@ -37,6 +37,7 @@ section {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        position: relative; // obligé de mettre une position pour jouer avec le position absolute de .menu-in
       }
 
       & .menu__title {
@@ -65,7 +66,7 @@ section {
   }
 }
 
-#note {
+.note {
   background-color: $color-note-fond;
 
   &__title,
@@ -83,7 +84,7 @@ section {
   }
 }
 
-#chic {
+.chic {
   background-color: $color-chic-fond;
   &__title,
   &__content {
@@ -91,7 +92,7 @@ section {
   }
 }
 
-#delice {
+.delice {
   background-color: $color-delice-fond;
   &__title,
   &__content {
@@ -99,7 +100,7 @@ section {
   }
 }
 
-#palette {
+.palette {
   background-color: $color-palette-fond;
   &__title,
   &__content {
