@@ -83,6 +83,7 @@
   }
 }
 
+// zoom sur item menu et opacity
 @keyframes zoom {
   from {
     transform: scale(1);
@@ -92,6 +93,38 @@
   }
 }
 
-.menus-container a:hover {
+.menu-in {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 500ms;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#note-dark {
+  background-color: darken($color-note-fond, 3);
+}
+
+#chic-dark {
+  background-color: darken($color-chic-fond, 3);
+}
+
+#delice-dark {
+  background-color: darken($color-delice-fond, 3);
+}
+
+#palette-dark {
+  background-color: darken($color-palette-fond, 3);
+}
+
+.menus-container .menu:hover {
   animation: zoom 500ms both;
+  & .menu-in {
+    opacity: 1;
+  }
 }

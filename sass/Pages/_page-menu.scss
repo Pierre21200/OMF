@@ -1,3 +1,6 @@
+.menu {
+  position: relative; // obligé de mettre une position pour jouer avec le position absolute de .menu-in
+}
 .menu-container {
   display: flex;
   flex-direction: column;
