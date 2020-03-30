@@ -6,6 +6,9 @@ header {
     @media screen and (min-width: 1400px) {
       font-size: 60px;
     }
+    @media screen and (min-width: 2000px) {
+      font-size: 75px;
+    }
   }
 }
 
@@ -63,17 +66,34 @@ footer .btn__container a button {
   @media screen and (min-width: 1400px) {
     font-size: 30px;
   }
+  @media screen and (min-width: 2000px) {
+    font-size: 45px;
+  }
 }
 
 // page menu
 section {
   > .menu-container {
+    & .menu-title {
+      @media screen and (min-width: 1400px) {
+        font-size: 30px;
+      }
+      @media screen and (min-width: 2000px) {
+        font-size: 40px;
+      }
+    }
     > .menu-verso {
       & .menu-header .header-title,
       .menu-footer {
         & p {
           @media screen and (max-width: 767px) {
             font-size: 20px;
+          }
+          @media screen and (min-width: 1400px) {
+            font-size: 30px;
+          }
+          @media screen and (min-width: 2000px) {
+            font-size: 40px;
           }
         }
       }
@@ -88,8 +108,17 @@ section {
           .deserts {
             width: 90%;
             margin-bottom: 20px;
-            & p {
-              font-size: 13px;
+          }
+        }
+        .starters,
+        .dishes,
+        .deserts {
+          & p {
+            @media screen and (min-width: 1400px) {
+              font-size: 20px;
+            }
+            @media screen and (min-width: 2000px) {
+              font-size: 30px;
             }
           }
         }
