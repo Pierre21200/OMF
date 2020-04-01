@@ -103,7 +103,7 @@
   right: 0;
   left: 0;
   opacity: 0;
-  transition: opacity 500ms;
+  transition: opacity;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -125,9 +125,7 @@
   background-color: darken($color-palette-fond, 3);
 }
 
-.menus-container .menu:hover {
-  animation: zoom 500ms both;
-  & .menu-in {
-    opacity: 1;
-  }
+.menus-container .menu-in:hover {
+  animation: zoom 1000ms forwards;
+  opacity: 1;
 }

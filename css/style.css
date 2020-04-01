@@ -249,7 +249,7 @@ body {
   right: 0;
   left: 0;
   opacity: 0;
-  transition: opacity 500ms;
+  transition: opacity;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -271,10 +271,8 @@ body {
   background-color: #eeffee;
 }
 
-.menus-container .menu:hover {
-  animation: zoom 500ms both;
-}
-.menus-container .menu:hover .menu-in {
+.menus-container .menu-in:hover {
+  animation: zoom 1000ms forwards;
   opacity: 1;
 }
 
