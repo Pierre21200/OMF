@@ -5,3 +5,9 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+@mixin darken-gradient($color, $color1) {
+  background: -webkit-linear-gradient(darken($color, 10), darken($color1, 10));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

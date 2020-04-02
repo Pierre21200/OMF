@@ -22,7 +22,7 @@
     width: 90%;
     font-family: sans-serif;
     font-style: italic;
-    padding: 10px 10px 20px 10px;
+    padding: 20px 10px 20px 10px;
 
     > .menu-header {
       display: flex;
@@ -58,13 +58,7 @@
         font-weight: bold;
         align-items: center;
         height: 68px;
-        & .line-left,
-        .line-right {
-          width: 25%;
-          height: 2px;
-          background-color: black;
-          transform: scale(0);
-        }
+
         & .img-deco {
           width: 30%;
           transform: scale(0);
@@ -74,12 +68,12 @@
 
       & .choice {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         font-size: 15px;
         width: 100%;
         text-align: center;
         > .txt {
-          width: 80%;
+          text-align: left;
         }
         > .price {
           font-weight: bold;
@@ -106,7 +100,6 @@
   }
 
   > #menu-note {
-    padding: 0;
     background-color: $color-note-fond;
     color: $color-note-texte;
     > .header-icon {

@@ -32,12 +32,17 @@ footer {
 .btn__container {
   display: flex;
   width: 50%;
+  & a {
+    text-decoration: none;
+  }
 
-  & button {
+  & p {
     background-color: $color-primary;
     border: 0px;
     font-size: 20px;
     color: $color-secondary;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
     &:hover {
       animation: wiggle 300ms infinite;
       cursor: pointer;

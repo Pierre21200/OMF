@@ -118,21 +118,24 @@ section {
     background-color: $color-primary;
     font-size: 20px;
     color: $color-secondary;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 10px 20px 10px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    &:hover {
+      animation: btn 500ms forwards ease-in-out;
+    }
+
     & .point-1 {
       margin-left: 5px;
       font-weight: bold;
+      opacity: 0;
     }
     & .point-2,
     .point-3 {
       margin-left: 2px;
       font-weight: bold;
+      opacity: 0;
     }
   }
 }
