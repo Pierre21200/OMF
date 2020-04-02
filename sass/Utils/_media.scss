@@ -19,7 +19,7 @@ section {
       justify-content: center;
       align-items: center;
     }
-    @media screen and (min-width: 400px) and (max-width: 1023px) {
+    @media screen and (min-width: 400px) and (max-width: 1025px) {
       flex-direction: row;
       flex-wrap: wrap;
     }
@@ -28,7 +28,7 @@ section {
         width: 70%;
         margin-top: 40px;
       }
-      @media screen and (min-width: 400px) and (max-width: 1023px) {
+      @media screen and (min-width: 400px) and (max-width: 1025px) {
         width: 40%;
         height: 40vh;
         margin-top: 40px;
@@ -61,13 +61,13 @@ section {
 
 footer .btn__container a p {
   @media screen and (max-width: 700px) {
-    font-size: 15px;
+    font-size: 20px;
   }
   @media screen and (min-width: 1400px) {
     font-size: 30px;
   }
   @media screen and (min-width: 2000px) {
-    font-size: 45px;
+    font-size: 40px;
   }
 }
 
