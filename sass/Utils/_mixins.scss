@@ -1,12 +1,14 @@
 //Mixins
 
 @mixin gradient($color, $color1) {
+  background: linear-gradient($color, $color1);
   background: -webkit-linear-gradient($color, $color1);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 @mixin darken-gradient($color, $color1) {
+  background: linear-gradient(darken($color, 10), darken($color1, 10));
   background: -webkit-linear-gradient(darken($color, 10), darken($color1, 10));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

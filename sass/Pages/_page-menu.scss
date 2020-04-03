@@ -61,8 +61,19 @@
 
         & .img-deco {
           width: 30%;
-          transform: scale(0);
           height: 10px;
+          transform: scale(0);
+          transition: all 1000ms;
+        }
+
+        &:hover > .img-deco {
+          transform: scale(1);
+          &__left {
+            transform-origin: left;
+          }
+          &__right {
+            transform-origin: right;
+          }
         }
       }
 

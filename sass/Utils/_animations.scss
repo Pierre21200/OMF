@@ -1,4 +1,4 @@
-// 1ère animation btn prochainement concernant point de suspension : a voir avec Ludo, puisque je ne peux pas répéter un delais, est ce la meilleure solution ?
+// 1ère animation btn prochainement concernant point de suspension : a voir avec Ludo, puisque je ne peux pas répéter un delai, est ce la meilleure solution ?
 @keyframes suspension-1 {
   0% {
     opacity: 0;
@@ -46,17 +46,6 @@
   animation: suspension-3 1500ms infinite;
 }
 
-// 2ème animation btn prochainement
-@keyframes btn {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(0.95);
-    box-shadow: 5px 5px 10px grey;
-  }
-}
-
 // Animation btns footer
 @keyframes wiggle {
   0% {
@@ -76,43 +65,7 @@
   }
 }
 
-// Animation titres des entrées plats desserts
-@keyframes deco {
-  from {
-    transform: scale(0);
-  }
-  to {
-    transform: scale(1);
-  }
-}
-
-.title {
-  &:hover > .img-deco {
-    animation: deco 1000ms both;
-    &__left {
-      transform-origin: left;
-    }
-    &__right {
-      transform-origin: right;
-    }
-  }
-}
-
-// Animation sur item menu et opacity
-@keyframes zoom {
-  0% {
-    transform: scale(1);
-  }
-  25% {
-    transform: scale(1.025);
-  }
-  50% {
-    transform: scale(1.05);
-  }
-  100% {
-    transform: scale(1.1);
-  }
-}
+// à remettre à sa place
 
 .menu-in {
   position: absolute;
@@ -121,10 +74,15 @@
   right: 0;
   left: 0;
   opacity: 0;
-  transition: opacity 500ms;
+  transform: scale(1);
+  transition: all 800ms ease-in-out;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  &:hover {
+    transform: scale(1.1);
+    opacity: 1;
+  }
 }
 
 #note-dark {
@@ -158,9 +116,9 @@
   }
 }
 
-.menus-container {
-  & .menu-in:hover {
-    animation: zoom 500ms forwards;
-    opacity: 1;
-  }
-}
+// .menus-container {
+//   & .menu-in:hover {
+//     animation: zoom 500ms forwards;
+//     opacity: 1;
+//   }
+// }

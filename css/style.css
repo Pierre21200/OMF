@@ -60,8 +60,18 @@ body {
 }
 .menu-container .menu-verso > .menu-section .title .img-deco {
   width: 30%;
-  transform: scale(0);
   height: 10px;
+  transform: scale(0);
+  transition: all 1000ms;
+}
+.menu-container .menu-verso > .menu-section .title:hover > .img-deco {
+  transform: scale(1);
+}
+.menu-container .menu-verso > .menu-section .title:hover > .img-deco__left {
+  transform-origin: left;
+}
+.menu-container .menu-verso > .menu-section .title:hover > .img-deco__right {
+  transform-origin: right;
 }
 .menu-container .menu-verso > .menu-section .choice {
   display: flex;
@@ -104,6 +114,7 @@ body {
 }
 .menu-container > #menu-note i {
   margin-right: 15px;
+  background: linear-gradient(#f05160, #f6916a);
   background: -webkit-linear-gradient(#f05160, #f6916a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -112,6 +123,7 @@ body {
   background-color: #edefef;
 }
 .menu-container > #menu-delice #title-delice {
+  background: linear-gradient(#6cb2f9, #0431df);
   background: -webkit-linear-gradient(#6cb2f9, #0431df);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -122,6 +134,7 @@ body {
   font-style: normal;
 }
 .menu-container > #menu-chic #title-chic {
+  background: linear-gradient(#905bfd, #d8352e);
   background: -webkit-linear-gradient(#905bfd, #d8352e);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -140,6 +153,7 @@ body {
   background: #fdfffd;
 }
 .menu-container > #menu-palette #title-palette {
+  background: linear-gradient(#bfff7e, #38973c);
   background: -webkit-linear-gradient(#bfff7e, #38973c);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -191,15 +205,6 @@ body {
   animation: suspension-3 1500ms infinite;
 }
 
-@keyframes btn {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(0.95);
-    box-shadow: 5px 5px 10px grey;
-  }
-}
 @keyframes wiggle {
   0% {
     transform: rotate(0deg);
@@ -217,38 +222,6 @@ body {
     transform: rotate(0deg);
   }
 }
-@keyframes deco {
-  from {
-    transform: scale(0);
-  }
-  to {
-    transform: scale(1);
-  }
-}
-.title:hover > .img-deco {
-  animation: deco 1000ms both;
-}
-.title:hover > .img-deco__left {
-  transform-origin: left;
-}
-.title:hover > .img-deco__right {
-  transform-origin: right;
-}
-
-@keyframes zoom {
-  0% {
-    transform: scale(1);
-  }
-  25% {
-    transform: scale(1.025);
-  }
-  50% {
-    transform: scale(1.05);
-  }
-  100% {
-    transform: scale(1.1);
-  }
-}
 .menu-in {
   position: absolute;
   top: 0;
@@ -256,16 +229,22 @@ body {
   right: 0;
   left: 0;
   opacity: 0;
-  transition: opacity 500ms;
+  transform: scale(1);
+  transition: all 800ms ease-in-out;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+.menu-in:hover {
+  transform: scale(1.1);
+  opacity: 1;
 }
 
 #note-dark {
   background-color: #fbd2cd;
 }
 #note-dark i {
+  background: linear-gradient(#ec2235, #f36d3a);
   background: -webkit-linear-gradient(#ec2235, #f36d3a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -278,6 +257,7 @@ body {
   background-color: #ffe6fc;
 }
 #chic-dark p {
+  background: linear-gradient(#6e29fc, #b22721);
   background: -webkit-linear-gradient(#6e29fc, #b22721);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -287,6 +267,7 @@ body {
   background-color: #f1f1f1;
 }
 #delice-dark p {
+  background: linear-gradient(#3b98f7, #0326ad);
   background: -webkit-linear-gradient(#3b98f7, #0326ad);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -296,14 +277,10 @@ body {
   background-color: #eeffee;
 }
 #palette-dark p {
+  background: linear-gradient(#a6ff4b, #2a722d);
   background: -webkit-linear-gradient(#a6ff4b, #2a722d);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-.menus-container .menu-in:hover {
-  animation: zoom 500ms forwards;
-  opacity: 1;
 }
 
 header {
@@ -319,6 +296,7 @@ header p {
   font-weight: bold;
   font-family: "Berlin Sans FB Demi", sans-serif;
   margin: 0px;
+  transition: all 1000ms;
 }
 header a {
   text-decoration: none;
@@ -439,6 +417,7 @@ section .menus-container a .menu__content p {
   justify-content: center;
 }
 .note .menu__icon i {
+  background: linear-gradient(#f05160, #f6916a);
   background: -webkit-linear-gradient(#f05160, #f6916a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -448,6 +427,7 @@ section .menus-container a .menu__content p {
   background-color: #fff5fe;
 }
 .chic__title, .chic__content {
+  background: linear-gradient(#905bfd, #d8352e);
   background: -webkit-linear-gradient(#905bfd, #d8352e);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -457,6 +437,7 @@ section .menus-container a .menu__content p {
   background-color: #f9f9f9;
 }
 .delice__title, .delice__content {
+  background: linear-gradient(#6cb2f9, #0431df);
   background: -webkit-linear-gradient(#6cb2f9, #0431df);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -466,6 +447,7 @@ section .menus-container a .menu__content p {
   background-color: #fdfffd;
 }
 .palette__title, .palette__content {
+  background: linear-gradient(#bfff7e, #38973c);
   background: -webkit-linear-gradient(#bfff7e, #38973c);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -488,9 +470,11 @@ section .menus-container a .menu__content p {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 1000ms;
 }
 .prochainement__container button:hover {
-  animation: btn 500ms forwards ease-in-out;
+  transform: scale(0.95);
+  box-shadow: 5px 5px 10px grey;
 }
 .prochainement__container button .point-1 {
   margin-left: 5px;
@@ -560,7 +544,7 @@ section .menus-container > a .menu__content p {
 }
 @media screen and (max-width: 700px) {
   section .prochainement__container button {
-    font-size: 20px;
+    font-size: 15px;
   }
 }
 @media screen and (min-width: 1400px) {
@@ -571,7 +555,7 @@ section .menus-container > a .menu__content p {
 
 @media screen and (max-width: 700px) {
   footer .btn__container a p {
-    font-size: 20px;
+    font-size: 15px;
   }
 }
 @media screen and (min-width: 1400px) {

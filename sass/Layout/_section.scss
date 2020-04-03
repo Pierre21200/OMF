@@ -122,8 +122,10 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 1000ms;
     &:hover {
-      animation: btn 500ms forwards ease-in-out;
+      transform: scale(0.95);
+      box-shadow: 5px 5px 10px grey;
     }
 
     & .point-1 {
