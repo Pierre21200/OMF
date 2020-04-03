@@ -2,10 +2,8 @@
   font-family: 'Eagle Lake';
   src: url('EagleLake.ttf') format('truetype');
 }
+// je n'arrive pas à faire fonctionner des font persos
 
-.section-note {
-  padding-bottom: 10vh;
-}
 section {
   display: flex;
   flex-direction: column;
@@ -13,7 +11,7 @@ section {
   align-items: center;
   text-align: center;
   padding-bottom: 7vh;
-  min-height: 82vh;
+  min-height: 82vh; // ça permet à ma section de prendre au minimum tout la page (- header et footer) et donc de rester centrer même avec un petit contenu
 
   & .menus-container {
     display: flex;
@@ -21,12 +19,11 @@ section {
     align-items: flex-end;
 
     width: 100%;
-    min-height: 58vh;
+    min-height: 62vh; // cette min-height et celle donné a prochainement__container permet de s'imbriquer parfaitement dans ma section peu importe le contenu et garder toujours les mêmes gaps entre le bouton prochainement les menus et le footer
 
     & a {
-      text-decoration: none;
       width: 18%;
-      height: 55vh; // media queries
+      height: 55vh;
 
       box-shadow: 0px 0px 10px 0px rgb(158, 158, 158);
       display: flex;
@@ -34,6 +31,7 @@ section {
       justify-content: center;
       align-items: center;
       overflow: hidden;
+
       > .menu {
         width: 100%;
         height: 100%;
@@ -41,6 +39,23 @@ section {
         flex-direction: column;
         justify-content: center;
         position: relative; // obligé de mettre une position pour jouer avec le position absolute de .menu-in
+        > .menu-dark {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          opacity: 0;
+          transform: scale(1);
+          transition: all 800ms ease-in-out;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          &:hover {
+            transform: scale(1.1);
+            opacity: 1;
+          }
+        }
       }
 
       & .menu__title {
@@ -88,6 +103,7 @@ section {
   }
 }
 
+// Concernent .menu
 .chic {
   background-color: $color-chic-fond;
   &__title,
@@ -112,6 +128,38 @@ section {
   }
 }
 
+// Concernent .menu-dark
+.note-dark {
+  background-color: darken($color-note-fond, 3);
+  & i {
+    @include darken-gradient(rgb(240, 81, 96), rgb(246, 145, 106));
+  }
+  & p {
+    color: darken($color-note-texte, 5);
+  }
+}
+
+.chic-dark {
+  background-color: darken($color-chic-fond, 3);
+  & p {
+    @include darken-gradient(rgb(144, 91, 253), rgb(216, 53, 46));
+  }
+}
+
+.delice-dark {
+  background-color: darken($color-delice-fond, 3);
+  & p {
+    @include darken-gradient(rgb(108, 178, 249), rgb(4, 49, 223));
+  }
+}
+
+.palette-dark {
+  background-color: darken($color-palette-fond, 3);
+  & p {
+    @include darken-gradient(rgb(191, 255, 126), rgb(56, 151, 60));
+  }
+}
+
 .prochainement__container {
   display: flex;
   justify-content: center;
@@ -128,7 +176,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: all 1000ms;
+    transition: all 1000ms ease-in-out;
     &:hover {
       transform: scale(0.95);
       box-shadow: 5px 5px 10px grey;
