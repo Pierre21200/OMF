@@ -15,11 +15,17 @@ header {
 section {
   .menus-container {
     @media screen and (max-width: 400px) {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
       flex-direction: column;
+      -webkit-box-pack: center;
       justify-content: center;
+      -webkit-box-align: center;
       align-items: center;
     }
     @media screen and (min-width: 400px) and (max-width: 1025px) {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
       flex-direction: row;
       flex-wrap: wrap;
     }
@@ -100,8 +106,12 @@ section {
 
       > .menu-section {
         @media screen and (max-width: 1023px) {
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
           flex-direction: column;
+          -webkit-box-pack: center;
           justify-content: center;
+          -webkit-box-align: center;
           align-items: center;
           > .starters,
           .dishes,

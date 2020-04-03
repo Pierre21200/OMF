@@ -1,6 +1,26 @@
 // Animation point de suspension btn prochainement
+@-webkit-keyframes suspension-1 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @keyframes suspension-1 {
   0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes suspension-2 {
+  0% {
+    opacity: 0;
+  }
+  33% {
     opacity: 0;
   }
   100% {
@@ -13,6 +33,18 @@
     opacity: 0;
   }
   33% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes suspension-3 {
+  0% {
+    opacity: 0;
+  }
+  66% {
     opacity: 0;
   }
   100% {
@@ -33,36 +65,67 @@
 }
 
 .point-1 {
+  -webkit-animation: suspension-1 1500ms infinite;
   animation: suspension-1 1500ms infinite;
 }
 .point-2 {
+  -webkit-animation: suspension-2 1500ms infinite;
   animation: suspension-2 1500ms infinite;
 }
 .point-3 {
+  -webkit-animation: suspension-3 1500ms infinite;
   animation: suspension-3 1500ms infinite;
 }
 
 // Animation btns footer
-@keyframes wiggle {
+@-webkit-keyframes wiggle {
   0% {
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   25% {
+    -webkit-transform: rotate(1deg);
     transform: rotate(1deg);
   }
   50% {
+    -webkit-transform: rotate(2deg);
     transform: rotate(2deg);
   }
   75% {
+    -webkit-transform: rotate(1deg);
     transform: rotate(1deg);
   }
   100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+@keyframes wiggle {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(1deg);
+    transform: rotate(1deg);
+  }
+  50% {
+    -webkit-transform: rotate(2deg);
+    transform: rotate(2deg);
+  }
+  75% {
+    -webkit-transform: rotate(1deg);
+    transform: rotate(1deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
 }
 
 footer .btn__container a p {
   &:hover {
+    -webkit-animation: wiggle 300ms infinite;
     animation: wiggle 300ms infinite;
     cursor: pointer;
   }

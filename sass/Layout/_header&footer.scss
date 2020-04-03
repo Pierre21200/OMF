@@ -1,6 +1,9 @@
 header {
+  display: -webkit-box;
   display: flex;
+  -webkit-box-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
   align-items: center;
   background-color: $color-primary;
   height: 11vh;
@@ -10,13 +13,17 @@ header {
     font-weight: bold;
     font-family: sans-serif;
     margin: 0px;
+    -webkit-transition: all 1000ms;
     transition: all 1000ms;
   }
 }
 
 footer {
+  display: -webkit-box;
   display: flex;
+  -webkit-box-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
   align-items: center;
   background-color: $color-primary;
   position: fixed;
@@ -26,6 +33,7 @@ footer {
 }
 
 .btn__container {
+  display: -webkit-box;
   display: flex;
   width: 50%;
   & p {
@@ -39,10 +47,12 @@ footer {
 }
 
 #contact {
+  -webkit-box-pack: end;
   justify-content: flex-end;
   padding-right: 20px;
 }
 #mentions {
+  -webkit-box-pack: start;
   justify-content: flex-start;
   padding-left: 20px;
 }

@@ -5,17 +5,24 @@
 // je n'arrive pas à faire fonctionner des font persos
 
 section {
+  display: -webkit-box;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
   flex-direction: column;
+  -webkit-box-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
   align-items: center;
   text-align: center;
   padding-bottom: 7vh;
   min-height: 82vh; // ça permet à ma section de prendre au minimum tout la page (- header et footer) et donc de rester centrer même avec un petit contenu
 
   & .menus-container {
+    display: -webkit-box;
     display: flex;
     justify-content: space-around;
+    -webkit-box-align: end;
     align-items: flex-end;
 
     width: 100%;
@@ -26,17 +33,26 @@ section {
       height: 55vh;
 
       box-shadow: 0px 0px 10px 0px rgb(158, 158, 158);
+      display: -webkit-box;
       display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
       flex-direction: column;
+      -webkit-box-pack: center;
       justify-content: center;
+      -webkit-box-align: center;
       align-items: center;
       overflow: hidden;
 
       > .menu {
         width: 100%;
         height: 100%;
+        display: -webkit-box;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
         flex-direction: column;
+        -webkit-box-pack: center;
         justify-content: center;
         position: relative; // obligé de mettre une position pour jouer avec le position absolute de .menu-in
         > .menu-dark {
@@ -46,12 +62,19 @@ section {
           right: 0;
           left: 0;
           opacity: 0;
+          -webkit-transform: scale(1);
           transform: scale(1);
+          -webkit-transition: all 800ms ease-in-out;
           transition: all 800ms ease-in-out;
+          display: -webkit-box;
           display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
           flex-direction: column;
+          -webkit-box-pack: center;
           justify-content: center;
           &:hover {
+            -webkit-transform: scale(1.1);
             transform: scale(1.1);
             opacity: 1;
           }
@@ -59,16 +82,22 @@ section {
       }
 
       & .menu__title {
+        display: -webkit-box;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
         flex-direction: column;
+        -webkit-box-pack: center;
         justify-content: center;
         text-align: center;
+        -webkit-box-align: center;
         align-items: center;
         & p {
           font-weight: bold;
           font-style: italic;
           font-size: 20px;
           margin: auto;
+          display: -webkit-box;
           display: flex;
         }
       }
@@ -94,7 +123,9 @@ section {
   }
   & .menu__icon {
     padding-bottom: 1em;
+    display: -webkit-box;
     display: flex;
+    -webkit-box-pack: center;
     justify-content: center;
 
     & i {
@@ -161,8 +192,11 @@ section {
 }
 
 .prochainement__container {
+  display: -webkit-box;
   display: flex;
+  -webkit-box-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
   align-items: center;
   min-height: 20vh;
   & button {
@@ -173,11 +207,16 @@ section {
     font-size: 20px;
     color: $color-secondary;
     padding: 10px 20px 10px 20px;
+    display: -webkit-box;
     display: flex;
+    -webkit-box-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
     align-items: center;
+    -webkit-transition: all 1000ms ease-in-out;
     transition: all 1000ms ease-in-out;
     &:hover {
+      -webkit-transform: scale(0.95);
       transform: scale(0.95);
       box-shadow: 5px 5px 10px grey;
     }
