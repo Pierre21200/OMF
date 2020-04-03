@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Eagle Lake';
+  src: url('EagleLake.ttf') format('truetype');
+}
+
 .section-note {
   padding-bottom: 10vh;
 }
@@ -70,6 +75,7 @@ section {
   &__title,
   &__content {
     color: $color-note-texte;
+    font-family: 'Eagle Lake', cursive;
   }
   & .menu__icon {
     padding-bottom: 1em;
