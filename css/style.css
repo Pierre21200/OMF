@@ -116,7 +116,9 @@ body {
   margin-right: 15px;
   background: linear-gradient(#f05160, #f6916a);
   background: -webkit-linear-gradient(#f05160, #f6916a);
+  background-clip: text;
   -webkit-background-clip: text;
+  text-fill-color: transparent;
   -webkit-text-fill-color: transparent;
 }
 .menu-container > #menu-delice {
@@ -125,7 +127,9 @@ body {
 .menu-container > #menu-delice #title-delice {
   background: linear-gradient(#6cb2f9, #0431df);
   background: -webkit-linear-gradient(#6cb2f9, #0431df);
+  background-clip: text;
   -webkit-background-clip: text;
+  text-fill-color: transparent;
   -webkit-text-fill-color: transparent;
   font-family: serif;
 }
@@ -136,7 +140,9 @@ body {
 .menu-container > #menu-chic #title-chic {
   background: linear-gradient(#905bfd, #d8352e);
   background: -webkit-linear-gradient(#905bfd, #d8352e);
+  background-clip: text;
   -webkit-background-clip: text;
+  text-fill-color: transparent;
   -webkit-text-fill-color: transparent;
   font-family: serif;
 }
@@ -155,7 +161,9 @@ body {
 .menu-container > #menu-palette #title-palette {
   background: linear-gradient(#bfff7e, #38973c);
   background: -webkit-linear-gradient(#bfff7e, #38973c);
+  background-clip: text;
   -webkit-background-clip: text;
+  text-fill-color: transparent;
   -webkit-text-fill-color: transparent;
   font-family: serif;
 }
@@ -419,7 +427,9 @@ section .menus-container a .menu__content p {
 .note .menu__icon i {
   background: linear-gradient(#f05160, #f6916a);
   background: -webkit-linear-gradient(#f05160, #f6916a);
+  background-clip: text;
   -webkit-background-clip: text;
+  text-fill-color: transparent;
   -webkit-text-fill-color: transparent;
 }
 
@@ -429,7 +439,9 @@ section .menus-container a .menu__content p {
 .chic__title, .chic__content {
   background: linear-gradient(#905bfd, #d8352e);
   background: -webkit-linear-gradient(#905bfd, #d8352e);
+  background-clip: text;
   -webkit-background-clip: text;
+  text-fill-color: transparent;
   -webkit-text-fill-color: transparent;
 }
 
@@ -439,7 +451,9 @@ section .menus-container a .menu__content p {
 .delice__title, .delice__content {
   background: linear-gradient(#6cb2f9, #0431df);
   background: -webkit-linear-gradient(#6cb2f9, #0431df);
+  background-clip: text;
   -webkit-background-clip: text;
+  text-fill-color: transparent;
   -webkit-text-fill-color: transparent;
 }
 
@@ -449,7 +463,9 @@ section .menus-container a .menu__content p {
 .palette__title, .palette__content {
   background: linear-gradient(#bfff7e, #38973c);
   background: -webkit-linear-gradient(#bfff7e, #38973c);
+  background-clip: text;
   -webkit-background-clip: text;
+  text-fill-color: transparent;
   -webkit-text-fill-color: transparent;
 }
 

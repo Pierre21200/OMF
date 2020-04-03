@@ -3,7 +3,9 @@
 @mixin gradient($color, $color1) {
   background: linear-gradient($color, $color1);
   background: -webkit-linear-gradient($color, $color1);
+  background-clip: text;
   -webkit-background-clip: text;
+  text-fill-color: transparent;
   -webkit-text-fill-color: transparent;
 }
 
