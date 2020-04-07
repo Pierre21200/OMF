@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'Eagle Lake';
-  src: url('EagleLake.ttf') format('truetype');
+  font-family: 'Eagle';
+  src: url('/Fonts/EagleLake.ttf') format('truetype');
 }
 // je n'arrive pas à faire fonctionner des font persos
 
@@ -55,7 +55,14 @@ section {
         -webkit-box-pack: center;
         justify-content: center;
         position: relative; // obligé de mettre une position pour jouer avec le position absolute de .menu-in
-        > .menu-dark {
+        &:hover {
+          & .menu-dark {
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+            opacity: 1;
+          }
+        }
+        .menu-dark {
           position: absolute;
           top: 0;
           bottom: 0;
@@ -73,11 +80,12 @@ section {
           flex-direction: column;
           -webkit-box-pack: center;
           justify-content: center;
-          &:hover {
-            -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-            opacity: 1;
-          }
+
+          // &:hover {
+          //   -webkit-transform: scale(1.1);
+          //   transform: scale(1.1);
+          //   opacity: 1;
+          // }
         }
       }
 
@@ -96,7 +104,6 @@ section {
           font-weight: bold;
           font-style: italic;
           font-size: 20px;
-          margin: auto;
           display: -webkit-box;
           display: flex;
         }
@@ -119,7 +126,7 @@ section {
   &__title,
   &__content {
     color: $color-note-texte;
-    font-family: 'Eagle Lake', cursive;
+    font-family: 'Eagle', cursive;
   }
   & .menu__icon {
     padding-bottom: 1em;
@@ -161,31 +168,31 @@ section {
 
 // Concernent .menu-dark
 .note-dark {
-  background-color: darken($color-note-fond, 3);
+  background-color: darken($color-note-fond, 10);
   & i {
     @include darken-gradient(rgb(240, 81, 96), rgb(246, 145, 106));
   }
   & p {
-    color: darken($color-note-texte, 5);
+    color: darken($color-note-texte, 10);
   }
 }
 
 .chic-dark {
-  background-color: darken($color-chic-fond, 3);
+  background-color: darken($color-chic-fond, 10);
   & p {
     @include darken-gradient(rgb(144, 91, 253), rgb(216, 53, 46));
   }
 }
 
 .delice-dark {
-  background-color: darken($color-delice-fond, 3);
+  background-color: darken($color-delice-fond, 10);
   & p {
     @include darken-gradient(rgb(108, 178, 249), rgb(4, 49, 223));
   }
 }
 
 .palette-dark {
-  background-color: darken($color-palette-fond, 3);
+  background-color: darken($color-palette-fond, 10);
   & p {
     @include darken-gradient(rgb(191, 255, 126), rgb(56, 151, 60));
   }
@@ -213,8 +220,8 @@ section {
     justify-content: center;
     -webkit-box-align: center;
     align-items: center;
-    -webkit-transition: all 1000ms ease-in-out;
-    transition: all 1000ms ease-in-out;
+    -webkit-transition: all 700ms ease-in-out;
+    transition: all 700ms ease-in-out;
     &:hover {
       -webkit-transform: scale(0.95);
       transform: scale(0.95);

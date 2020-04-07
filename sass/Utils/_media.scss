@@ -65,7 +65,7 @@ section {
   }
 }
 
-footer .btn__container a p {
+footer .footer-content a p {
   @media screen and (max-width: 700px) {
     font-size: 15px;
   }
@@ -89,6 +89,9 @@ section {
       }
     }
     > .menu-verso {
+      @media screen and (max-width: 425px) {
+        width: 100%;
+      }
       & .menu-header .header-title,
       .menu-footer {
         & p {
