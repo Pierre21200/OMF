@@ -47,7 +47,14 @@
         > p {
           margin-top: 10px;
           font-weight: bold;
+          font-size: 40px;
+          font-family: Tangerine;
+        }
+      }
+      > .title-note {
+        p {
           font-size: 25px;
+          font-family: serif;
         }
       }
     }
@@ -106,9 +113,7 @@
         font-size: 15px;
         width: 100%;
         text-align: center;
-        & p {
-          font-family: cursive;
-        }
+
         > .choice-text {
           text-align: left;
         }
