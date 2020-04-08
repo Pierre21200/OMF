@@ -330,14 +330,13 @@ header {
   -webkit-box-align: center;
   align-items: center;
   background-color: #579c87;
-  height: 11vh;
 }
 header p {
   color: #fdcb46;
   font-size: 50px;
   font-weight: bold;
   font-family: sans-serif;
-  margin: 0px;
+  margin: 10px;
   -webkit-transition: all 1000ms;
   transition: all 1000ms;
 }
@@ -362,7 +361,6 @@ footer {
   width: 50%;
 }
 .footer-content p {
-  background-color: #579c87;
   border: 0px;
   font-size: 20px;
   color: #fdcb46;
@@ -384,7 +382,7 @@ footer {
 
 @font-face {
   font-family: "Eagle";
-  src: url("/Fonts/EagleLake.ttf") format("truetype");
+  src: url("./Fonts/EagleLake.ttf") format("truetype");
 }
 section {
   display: -webkit-box;
@@ -493,7 +491,7 @@ section .menus-container a .menu__content p {
 }
 .note__title, .note__content {
   color: #3c1218;
-  font-family: "Eagle", cursive;
+  font-family: "Eagle";
 }
 .note .menu__icon {
   padding-bottom: 1em;
@@ -724,11 +722,6 @@ section .menus-container > a .menu__content p {
 @media screen and (min-width: 2000px) {
   section > .menu-container .menu-title {
     font-size: 40px;
-  }
-}
-@media screen and (max-width: 425px) {
-  section > .menu-container > .menu-verso {
-    width: 100%;
   }
 }
 @media screen and (max-width: 767px) {

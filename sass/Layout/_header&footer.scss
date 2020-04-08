@@ -6,13 +6,13 @@ header {
   -webkit-box-align: center;
   align-items: center;
   background-color: $color-primary;
-  height: 11vh;
+
   & p {
     color: $color-secondary;
     font-size: 50px;
     font-weight: bold;
     font-family: sans-serif;
-    margin: 0px;
+    margin: 10px;
     -webkit-transition: all 1000ms;
     transition: all 1000ms;
   }
@@ -37,7 +37,6 @@ footer {
   display: flex;
   width: 50%;
   & p {
-    background-color: $color-primary;
     border: 0px;
     font-size: 20px;
     color: $color-secondary;

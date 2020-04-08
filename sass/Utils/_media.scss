@@ -89,9 +89,6 @@ section {
       }
     }
     > .menu-verso {
-      @media screen and (max-width: 425px) {
-        width: 100%;
-      }
       & .menu-header .header-title,
       .menu-footer {
         & p {
