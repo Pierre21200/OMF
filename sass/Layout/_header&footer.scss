@@ -14,8 +14,6 @@ header {
     font-weight: bold;
     font-family: sans-serif;
     margin: 10px;
-    -webkit-transition: all 1000ms;
-    transition: all 1000ms;
   }
 }
 
@@ -38,10 +36,8 @@ footer {
   display: flex;
   width: 50%;
   & p {
-    border: 0px;
     font-size: 20px;
     color: $color-secondary;
-    margin: 0;
     font-family: Arial, Helvetica, sans-serif;
   }
 }

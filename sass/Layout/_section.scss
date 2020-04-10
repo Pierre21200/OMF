@@ -103,6 +103,7 @@ section {
   }
 }
 
+// Concernent .menu
 .note {
   background-color: $color-note-fond;
 
@@ -113,6 +114,7 @@ section {
     font-size: 20px;
   }
   & .menu__icon {
+    font-size: 20px;
     padding-bottom: 1em;
     display: -webkit-box;
     display: flex;
@@ -125,7 +127,6 @@ section {
   }
 }
 
-// Concernent .menu
 .chic {
   background-color: $color-chic-fond;
   &__title,
@@ -152,34 +153,19 @@ section {
 
 // Concernent .menu-dark
 .note-dark {
-  background-color: darken($color-note-fond, 10);
-  & i {
-    @include darken-gradient(rgb(240, 81, 96), rgb(246, 145, 106));
-  }
-  & p {
-    color: darken($color-note-texte, 10);
-  }
+  background-color: darken($color-note-fond, $amount: 10);
 }
 
 .chic-dark {
-  background-color: darken($color-chic-fond, 10);
-  & p {
-    @include darken-gradient(rgb(144, 91, 253), rgb(216, 53, 46));
-  }
+  background-color: darken($color-chic-fond, $amount: 10);
 }
 
 .delice-dark {
-  background-color: darken($color-delice-fond, 10);
-  & p {
-    @include darken-gradient(rgb(108, 178, 249), rgb(4, 49, 223));
-  }
+  background-color: darken($color-delice-fond, $amount: 10);
 }
 
 .palette-dark {
-  background-color: darken($color-palette-fond, 10);
-  & p {
-    @include darken-gradient(rgb(191, 255, 126), rgb(56, 151, 60));
-  }
+  background-color: darken($color-palette-fond, $amount: 10);
 }
 
 .prochainement__container {

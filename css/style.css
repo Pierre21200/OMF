@@ -340,8 +340,6 @@ header p {
   font-weight: bold;
   font-family: sans-serif;
   margin: 10px;
-  -webkit-transition: all 1000ms;
-  transition: all 1000ms;
 }
 
 footer {
@@ -364,10 +362,8 @@ footer {
   width: 50%;
 }
 .footer-content p {
-  border: 0px;
   font-size: 20px;
   color: #fdcb46;
-  margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -489,6 +485,7 @@ section .menus-container a .menu__content {
   font-size: 20px;
 }
 .note .menu__icon {
+  font-size: 20px;
   padding-bottom: 1em;
   display: -webkit-box;
   display: flex;
@@ -535,48 +532,17 @@ section .menus-container a .menu__content {
 .note-dark {
   background-color: #f8b5ac;
 }
-.note-dark i {
-  background: -webkit-gradient(linear, left top, left bottom, from(#ec2235), to(#f36d3a));
-  background: linear-gradient(#ec2235, #f36d3a);
-  background: -webkit-linear-gradient(#ec2235, #f36d3a);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.note-dark p {
-  color: #150608;
-}
 
 .chic-dark {
   background-color: #ffc2f9;
-}
-.chic-dark p {
-  background: -webkit-gradient(linear, left top, left bottom, from(#6e29fc), to(#b22721));
-  background: linear-gradient(#6e29fc, #b22721);
-  background: -webkit-linear-gradient(#6e29fc, #b22721);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .delice-dark {
   background-color: #e0e0e0;
 }
-.delice-dark p {
-  background: -webkit-gradient(linear, left top, left bottom, from(#3b98f7), to(#0326ad));
-  background: linear-gradient(#3b98f7, #0326ad);
-  background: -webkit-linear-gradient(#3b98f7, #0326ad);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
 
 .palette-dark {
   background-color: #caffca;
-}
-.palette-dark p {
-  background: -webkit-gradient(linear, left top, left bottom, from(#a6ff4b), to(#2a722d));
-  background: linear-gradient(#a6ff4b, #2a722d);
-  background: -webkit-linear-gradient(#a6ff4b, #2a722d);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .prochainement__container {
