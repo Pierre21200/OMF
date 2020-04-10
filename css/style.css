@@ -9,14 +9,9 @@ a:active {
 }
 
 .menu-container {
-  display: -webkit-box;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
   flex-direction: column;
-  -webkit-box-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
   align-items: center;
   padding-bottom: 40px;
 }
@@ -24,11 +19,8 @@ a:active {
   font-size: 20px;
   font-weight: bold;
   height: 15%;
-  display: -webkit-box;
   display: flex;
-  -webkit-box-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
   align-items: center;
 }
 .menu-container > .menu-title p {
@@ -42,12 +34,8 @@ a:active {
   padding: 20px 10px 20px 10px;
 }
 .menu-container .menu-verso > .menu-header {
-  display: -webkit-box;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
   flex-direction: column;
-  -webkit-box-pack: center;
   justify-content: center;
   text-align: center;
   height: 25%;
@@ -64,7 +52,6 @@ a:active {
   font-family: serif;
 }
 .menu-container .menu-verso > .menu-section {
-  display: -webkit-box;
   display: flex;
   justify-content: space-around;
   height: 65%;
@@ -75,40 +62,30 @@ a:active {
   width: 30%;
 }
 .menu-container .menu-verso > .menu-section .title {
-  display: -webkit-box;
   display: flex;
-  -webkit-box-pack: justify;
   justify-content: space-between;
   text-align: center;
   font-weight: bold;
-  -webkit-box-align: center;
   align-items: center;
   height: 68px;
 }
 .menu-container .menu-verso > .menu-section .title .img-deco {
   width: 30%;
   height: 10px;
-  -webkit-transform: scale(0);
   transform: scale(0);
-  -webkit-transition: all 1000ms;
   transition: all 1000ms;
 }
 .menu-container .menu-verso > .menu-section .title:hover > .img-deco {
-  -webkit-transform: scale(1);
   transform: scale(1);
 }
 .menu-container .menu-verso > .menu-section .title:hover > .img-deco__left {
-  -webkit-transform-origin: left;
   transform-origin: left;
 }
 .menu-container .menu-verso > .menu-section .title:hover > .img-deco__right {
-  -webkit-transform-origin: right;
   transform-origin: right;
 }
 .menu-container .menu-verso > .menu-section .choice {
-  display: -webkit-box;
   display: flex;
-  -webkit-box-pack: justify;
   justify-content: space-between;
   font-size: 15px;
   width: 100%;
@@ -119,20 +96,15 @@ a:active {
 }
 .menu-container .menu-verso > .menu-section .choice > .choice-price {
   font-weight: bold;
-  display: -webkit-box;
   display: flex;
-  -webkit-box-align: center;
   align-items: center;
 }
 .menu-container .menu-verso > .menu-section .choice > .choice-price p {
   margin-left: 15px;
 }
 .menu-container .menu-verso > .menu-footer {
-  display: -webkit-box;
   display: flex;
-  -webkit-box-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
   align-items: center;
   height: 10%;
 }
@@ -199,27 +171,8 @@ a:active {
   font-family: serif;
 }
 
-@-webkit-keyframes suspension-1 {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 @keyframes suspension-1 {
   0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@-webkit-keyframes suspension-2 {
-  0% {
-    opacity: 0;
-  }
-  33% {
     opacity: 0;
   }
   100% {
@@ -231,17 +184,6 @@ a:active {
     opacity: 0;
   }
   33% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@-webkit-keyframes suspension-3 {
-  0% {
-    opacity: 0;
-  }
-  66% {
     opacity: 0;
   }
   100% {
@@ -260,76 +202,42 @@ a:active {
   }
 }
 .point-1 {
-  -webkit-animation: suspension-1 1500ms infinite;
   animation: suspension-1 1500ms infinite;
 }
 
 .point-2 {
-  -webkit-animation: suspension-2 1500ms infinite;
   animation: suspension-2 1500ms infinite;
 }
 
 .point-3 {
-  -webkit-animation: suspension-3 1500ms infinite;
   animation: suspension-3 1500ms infinite;
 }
 
-@-webkit-keyframes wiggle {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  25% {
-    -webkit-transform: rotate(1deg);
-    transform: rotate(1deg);
-  }
-  50% {
-    -webkit-transform: rotate(2deg);
-    transform: rotate(2deg);
-  }
-  75% {
-    -webkit-transform: rotate(1deg);
-    transform: rotate(1deg);
-  }
-  100% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-}
 @keyframes wiggle {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   25% {
-    -webkit-transform: rotate(1deg);
     transform: rotate(1deg);
   }
   50% {
-    -webkit-transform: rotate(2deg);
     transform: rotate(2deg);
   }
   75% {
-    -webkit-transform: rotate(1deg);
     transform: rotate(1deg);
   }
   100% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
 }
 footer .footer-content a p:hover {
-  -webkit-animation: wiggle 300ms infinite;
   animation: wiggle 300ms infinite;
   cursor: pointer;
 }
 
 header {
-  display: -webkit-box;
   display: flex;
-  -webkit-box-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
   align-items: center;
   background-color: #579c87;
   height: 11vh;
@@ -343,11 +251,8 @@ header p {
 }
 
 footer {
-  display: -webkit-box;
   display: flex;
-  -webkit-box-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
   align-items: center;
   background-color: #579c87;
   position: fixed;
@@ -355,26 +260,20 @@ footer {
   width: 100%;
   height: 7vh;
 }
-
-.footer-content {
-  display: -webkit-box;
+footer > .footer-content {
   display: flex;
   width: 50%;
 }
-.footer-content p {
+footer > .footer-content p {
   font-size: 20px;
   color: #fdcb46;
   font-family: Arial, Helvetica, sans-serif;
 }
-
-#contact {
-  -webkit-box-pack: end;
+footer > #contact {
   justify-content: flex-end;
   padding-right: 20px;
 }
-
-#mentions {
-  -webkit-box-pack: start;
+footer > #mentions {
   justify-content: flex-start;
   padding-left: 20px;
 }
@@ -384,24 +283,17 @@ footer {
   src: url("./Fonts/Tangerine.ttf") format("truetype");
 }
 section {
-  display: -webkit-box;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
   flex-direction: column;
-  -webkit-box-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
   align-items: center;
   text-align: center;
   padding-bottom: 7vh;
   min-height: 82vh;
 }
 section .menus-container {
-  display: -webkit-box;
   display: flex;
   justify-content: space-around;
-  -webkit-box-align: end;
   align-items: flex-end;
   width: 100%;
   min-height: 62vh;
@@ -410,26 +302,17 @@ section .menus-container a {
   width: 18%;
   height: 55vh;
   box-shadow: 0px 0px 10px 0px #9e9e9e;
-  display: -webkit-box;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
   flex-direction: column;
-  -webkit-box-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
   align-items: center;
   overflow: hidden;
 }
 section .menus-container a > .menu {
   width: 100%;
   height: 100%;
-  display: -webkit-box;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
   flex-direction: column;
-  -webkit-box-pack: center;
   justify-content: center;
   position: relative;
   font-weight: bold;
@@ -447,28 +330,18 @@ section .menus-container a > .menu .menu-dark {
   right: 0;
   left: 0;
   opacity: 0;
-  -webkit-transform: scale(1);
   transform: scale(1);
-  -webkit-transition: all 800ms ease-in-out;
   transition: all 800ms ease-in-out;
-  display: -webkit-box;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
   flex-direction: column;
-  -webkit-box-pack: center;
   justify-content: center;
 }
 section .menus-container a .menu__title {
   display: -webkit-box;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
   flex-direction: column;
-  -webkit-box-pack: center;
   justify-content: center;
   text-align: center;
-  -webkit-box-align: center;
   align-items: center;
 }
 section .menus-container a .menu__content {
@@ -487,9 +360,7 @@ section .menus-container a .menu__content {
 .note .menu__icon {
   font-size: 20px;
   padding-bottom: 1em;
-  display: -webkit-box;
   display: flex;
-  -webkit-box-pack: center;
   justify-content: center;
 }
 .note .menu__icon i {
@@ -545,16 +416,14 @@ section .menus-container a .menu__content {
   background-color: #caffca;
 }
 
-.prochainement__container {
+.prochainement-container {
   display: -webkit-box;
   display: flex;
-  -webkit-box-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
   align-items: center;
   min-height: 20vh;
 }
-.prochainement__container button {
+.prochainement-container button {
   cursor: pointer;
   border-radius: 10px 10px 10px 10px;
   border: 2px;
@@ -564,25 +433,21 @@ section .menus-container a .menu__content {
   padding: 10px 20px 10px 20px;
   display: -webkit-box;
   display: flex;
-  -webkit-box-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
   align-items: center;
-  -webkit-transition: all 700ms ease-in-out;
   transition: all 700ms ease-in-out;
 }
-.prochainement__container button:hover {
-  -webkit-transform: scale(0.95);
+.prochainement-container button:hover {
   transform: scale(0.95);
   box-shadow: 0 0 15px #9e9e9e;
 }
-.prochainement__container button .point-1 {
+.prochainement-container button .point-1 {
   margin-left: 5px;
   font-weight: bold;
   opacity: 0;
 }
-.prochainement__container button .point-2,
-.prochainement__container button .point-3 {
+.prochainement-container button .point-2,
+.prochainement-container button .point-3 {
   margin-left: 2px;
   font-weight: bold;
   opacity: 0;
@@ -606,19 +471,13 @@ section .menus-container a .menu__content {
 
 @media screen and (max-width: 400px) {
   section .menus-container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
     flex-direction: column;
-    -webkit-box-pack: center;
     justify-content: center;
-    -webkit-box-align: center;
     align-items: center;
   }
 }
 @media screen and (min-width: 400px) and (max-width: 1025px) {
   section .menus-container {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
     flex-direction: row;
     flex-wrap: wrap;
   }
@@ -706,7 +565,7 @@ section .menus-container a .menu__content {
 @media screen and (max-width: 767px) {
   section > .menu-container > .menu-verso .menu-header .header-title p,
 section > .menu-container > .menu-verso .menu-footer p {
-    font-size: 35px;
+    font-size: 25px;
   }
 }
 @media screen and (min-width: 1400px) {
@@ -723,12 +582,8 @@ section > .menu-container > .menu-verso .menu-footer p {
 }
 @media screen and (max-width: 1023px) {
   section > .menu-container > .menu-verso > .menu-section {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
     flex-direction: column;
-    -webkit-box-pack: center;
     justify-content: center;
-    -webkit-box-align: center;
     align-items: center;
   }
   section > .menu-container > .menu-verso > .menu-section > .starters,
@@ -738,15 +593,15 @@ section > .menu-container > .menu-verso > .menu-section .deserts {
     margin-bottom: 20px;
   }
 }
-@media screen and (min-width: 1400px) {
-  section > .menu-container > .menu-verso > .menu-section .starters p,
+@media screen and (max-width: 1023px) and (min-width: 1400px) {
+  section > .menu-container > .menu-verso > .menu-section > .starters p,
 section > .menu-container > .menu-verso > .menu-section .dishes p,
 section > .menu-container > .menu-verso > .menu-section .deserts p {
     font-size: 20px;
   }
 }
-@media screen and (min-width: 2000px) {
-  section > .menu-container > .menu-verso > .menu-section .starters p,
+@media screen and (max-width: 1023px) and (min-width: 2000px) {
+  section > .menu-container > .menu-verso > .menu-section > .starters p,
 section > .menu-container > .menu-verso > .menu-section .dishes p,
 section > .menu-container > .menu-verso > .menu-section .deserts p {
     font-size: 30px;

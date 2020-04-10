@@ -1,9 +1,6 @@
 header {
-  display: -webkit-box;
   display: flex;
-  -webkit-box-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
   align-items: center;
   background-color: $color-primary;
   height: 11vh;
@@ -18,37 +15,31 @@ header {
 }
 
 footer {
-  display: -webkit-box;
   display: flex;
-  -webkit-box-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
   align-items: center;
   background-color: $color-primary;
   position: fixed;
   bottom: 0;
   width: 100%;
   height: 7vh;
-}
 
-.footer-content {
-  display: -webkit-box;
-  display: flex;
-  width: 50%;
-  & p {
-    font-size: 20px;
-    color: $color-secondary;
-    font-family: Arial, Helvetica, sans-serif;
+  > .footer-content {
+    display: flex;
+    width: 50%;
+    & p {
+      font-size: 20px;
+      color: $color-secondary;
+      font-family: Arial, Helvetica, sans-serif;
+    }
   }
-}
 
-#contact {
-  -webkit-box-pack: end;
-  justify-content: flex-end;
-  padding-right: 20px;
-}
-#mentions {
-  -webkit-box-pack: start;
-  justify-content: flex-start;
-  padding-left: 20px;
+  > #contact {
+    justify-content: flex-end;
+    padding-right: 20px;
+  }
+  > #mentions {
+    justify-content: flex-start;
+    padding-left: 20px;
+  }
 }

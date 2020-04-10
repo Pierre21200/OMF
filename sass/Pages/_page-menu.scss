@@ -1,12 +1,7 @@
 .menu-container {
-  display: -webkit-box;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
   flex-direction: column;
-  -webkit-box-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
   align-items: center;
   padding-bottom: 40px;
 
@@ -14,11 +9,11 @@
     font-size: 20px;
     font-weight: bold;
     height: 15%;
-    display: -webkit-box;
+
     display: flex;
-    -webkit-box-pack: center;
+
     justify-content: center;
-    -webkit-box-align: center;
+
     align-items: center;
     & p {
       margin-bottom: 30px;
@@ -33,12 +28,10 @@
     padding: 20px 10px 20px 10px;
 
     > .menu-header {
-      display: -webkit-box;
       display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
+
       flex-direction: column;
-      -webkit-box-pack: center;
+
       justify-content: center;
       text-align: center;
       height: 25%;
@@ -60,7 +53,6 @@
     }
 
     > .menu-section {
-      display: -webkit-box;
       display: flex;
       justify-content: space-around;
       height: 65%;
@@ -72,43 +64,38 @@
       }
 
       & .title {
-        display: -webkit-box;
         display: flex;
-        -webkit-box-pack: justify;
+
         justify-content: space-between;
         text-align: center;
         font-weight: bold;
-        -webkit-box-align: center;
+
         align-items: center;
         height: 68px;
 
         & .img-deco {
           width: 30%;
           height: 10px;
-          -webkit-transform: scale(0);
+
           transform: scale(0);
-          -webkit-transition: all 1000ms;
+
           transition: all 1000ms;
         }
 
         &:hover > .img-deco {
-          -webkit-transform: scale(1);
           transform: scale(1);
           &__left {
-            -webkit-transform-origin: left;
             transform-origin: left;
           }
           &__right {
-            -webkit-transform-origin: right;
             transform-origin: right;
           }
         }
       }
 
       & .choice {
-        display: -webkit-box;
         display: flex;
-        -webkit-box-pack: justify;
+
         justify-content: space-between;
         font-size: 15px;
         width: 100%;
@@ -119,9 +106,9 @@
         }
         > .choice-price {
           font-weight: bold;
-          display: -webkit-box;
+
           display: flex;
-          -webkit-box-align: center;
+
           align-items: center;
           & p {
             margin-left: 15px;
@@ -131,11 +118,10 @@
     }
 
     > .menu-footer {
-      display: -webkit-box;
       display: flex;
-      -webkit-box-pack: center;
+
       justify-content: center;
-      -webkit-box-align: center;
+
       align-items: center;
 
       height: 10%;
